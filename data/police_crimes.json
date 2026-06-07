@@ -7,7 +7,7 @@
     "status": "Active Priority",
     "source": "westmidlands.police.uk",
     "sourceUrl": "https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area",
-    "fetchedAt": "7 June 2026 at 01:47"
+    "fetchedAt": "7 June 2026 at 02:23"
   },
   {
     "title": "Shoplifting",
@@ -17,17 +17,17 @@
     "status": "Active Priority",
     "source": "westmidlands.police.uk",
     "sourceUrl": "https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area",
-    "fetchedAt": "7 June 2026 at 01:47"
+    "fetchedAt": "7 June 2026 at 02:23"
   },
   {
     "title": "Criminal Damage and Arson",
     "issue": "41 reported (Apr 2026)",
     "count": "41",
-    "action": "Increased patrols in hotspot areas. Residents encouraged to report suspicious activity.",
+    "action": "Increased patrols in hotspot areas.",
     "status": "Active Priority",
     "source": "westmidlands.police.uk",
     "sourceUrl": "https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area",
-    "fetchedAt": "7 June 2026 at 01:47"
+    "fetchedAt": "7 June 2026 at 02:23"
   },
   {
     "title": "Other Theft",
@@ -37,6 +37,6 @@
     "status": "Active Priority",
     "source": "westmidlands.police.uk",
     "sourceUrl": "https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area",
-    "fetchedAt": "7 June 2026 at 01:47"
+    "fetchedAt": "7 June 2026 at 02:23"
   }
 ]
