@@ -391,6 +391,8 @@ def scrape_news():
 def scrape_planning():
     print("\n-- Planning Applications --")
     apps = []
+    sources_tried   = 0   # incremented each time we actually attempt a live source
+    sources_reached = 0   # incremented when a source responds (even with 0 results)
 
     # ------------------------------------------------------------------
     # SOURCE A: Google Drive folder — weekly spreadsheet from your email
@@ -398,6 +400,8 @@ def scrape_planning():
     print("  Checking Drive planning folder via API...")
     drive = get_drive_service()
     if drive:
+        sources_tried += 1
+        sources_reached += 1   # Drive auth succeeded — counts as reachable
         files = list_drive_folder_api(drive, PLANNING_FOLDER_ID)
 
         # Find spreadsheet or CSV files — newest first (already sorted)
@@ -431,11 +435,14 @@ def scrape_planning():
     # ------------------------------------------------------------------
     try:
         ninety_ago = NOW_UTC - timedelta(days=90)
-        # Single f-string avoids multiline concat dropping variables
-        api_url = f"https://www.planning.data.gov.uk/entity.json?dataset=planning-application&geometry_entity=800137&geometry_relation=intersects&entry_date_year={ninety_ago.year}&entry_date_month={ninety_ago.month}&entry_date_day={ninety_ago.day}&entry_date_match=after&limit=100"
+        # Use ISO-format date (YYYY-MM-DD) — zero-padded, correct API param name
+        api_date = ninety_ago.strftime("%Y-%m-%d")
+        api_url = f"https://www.planning.data.gov.uk/entity.json?dataset=planning-application&geometry_entity=800137&geometry_relation=intersects&entry_date__gte={api_date}&limit=100"
         print(f"  Calling: {api_url}")
+        sources_tried += 1
         r = safe_get(api_url)
         if r and r.status_code == 200:
+            sources_reached += 1
             entities = r.json().get("entities", [])
             print(f"  planning.data.gov.uk: {len(entities)} entities returned")
             existing_refs = {a["reference"] for a in apps}
@@ -532,7 +539,7 @@ def scrape_planning():
             "source":      "planandregulatory.coventry.gov.uk",
             "sourceUrl":   PORTAL + "?fa=getApplications&ward=Lower%20Stoke",
             "fetchedAt":   "Manually added",
-            "storedAt":    1749340800
+            "storedAt":    NOW_UTC.timestamp()   # refreshed each run so it never ages out
         },
     ]
     manual_refs = {a["reference"] for a in MANUAL}
@@ -572,7 +579,14 @@ def scrape_planning():
     print(f"  Total planning apps: {len(merged)}")
     for a in merged:
         print(f"    {a['reference']} | {a['address'][:40]} | {a['status']}")
-    write_json("planning.json", merged)
+
+    # If every live source was tried but none responded, signal the page.
+    if sources_tried > 0 and sources_reached == 0 and not merged:
+        print("  All planning sources unreachable — writing siteDown marker")
+        write_json("planning.json", [{"siteDown": True, "fetchedAt": STAMP,
+                                      "sourceUrl": PORTAL + "?fa=getApplications&ward=Lower%20Stoke"}])
+    else:
+        write_json("planning.json", merged)
 
 # =============================================================================
 # 3. WEST MIDLANDS POLICE
@@ -583,43 +597,44 @@ def wmp_fetch(section):
 
 def scrape_police_events():
     print("\n-- Police PACT Events --")
+    wmp_url  = f"{WMP_BASE}/meetings-and-events/{WMP_SUFFIX}"
+    html     = wmp_fetch("meetings-and-events")
+
+    # If the site was unreachable, write a siteDown marker so the page can
+    # show a clear message instead of a blank table.
+    if not html:
+        print("  WMP site unreachable — writing siteDown marker")
+        write_json("police_events.json", [{"siteDown": True, "fetchedAt": STAMP,
+                                           "sourceUrl": wmp_url}])
+        return
+
     events = []
-    html   = wmp_fetch("meetings-and-events")
-    if html:
-        soup = BeautifulSoup(html, "html.parser")
-        for h5 in soup.find_all("h5"):
-            title = h5.get_text(strip=True)
-            if not title or len(title) < 5:
+    soup   = BeautifulSoup(html, "html.parser")
+    for h5 in soup.find_all("h5"):
+        title = h5.get_text(strip=True)
+        if not title or len(title) < 5:
+            continue
+        if re.search(r'cookie|report|contact|skip|nav|menu|station|social', title, re.I):
+            continue
+        date_str = address = ""
+        for sib in h5.next_siblings:
+            sib_text = sib.get_text(" ", strip=True) if hasattr(sib, "get_text") else str(sib).strip()
+            if not sib_text or len(sib_text) < 3:
                 continue
-            if re.search(r'cookie|report|contact|skip|nav|menu|station|social', title, re.I):
-                continue
-            date_str = address = ""
-            for sib in h5.next_siblings:
-                sib_text = sib.get_text(" ", strip=True) if hasattr(sib, "get_text") else str(sib).strip()
-                if not sib_text or len(sib_text) < 3:
-                    continue
-                if re.search(r'\d{1,2}:\d{2}(AM|PM)', sib_text, re.I) and re.search(r'\d{4}', sib_text):
-                    date_str = sib_text
-                elif not address and len(sib_text) > 5 and "calendar" not in sib_text.lower():
-                    address = sib_text
-                if hasattr(sib, "name") and sib.name in ["h4","h5","h3","h2"]:
-                    break
-            if title and date_str:
-                events.append({"title": title, "date": date_str,
-                                "address": address or "Coventry",
-                                "sourceUrl": f"{WMP_BASE}/meetings-and-events/{WMP_SUFFIX}",
-                                "fetchedAt": STAMP})
-    wmp_url = f"{WMP_BASE}/meetings-and-events/{WMP_SUFFIX}"
-    known = [
-        {"title":"Lower Stoke PACT Meeting",            "date":"6:00PM-7:00PM, Mon 08 June 2026","address":"St Margaret's Church, 50 Walsgrave Road, Ball Hill, Coventry"},
-        {"title":"Community PACT Meeting - Upper Stoke", "date":"6:00PM-7:00PM, Mon 08 June 2026","address":"St Margaret's Church, 50 Walsgrave Road, Ball Hill, Coventry"},
-        {"title":"Wyken Community PACT Meeting",         "date":"6:00PM-7:00PM, Tue 09 June 2026","address":"Wyken Community Centre, Westmorland Road, Coventry CV2 5PY"},
-        {"title":"Community PACT Meeting - Upper Stoke", "date":"6:00PM-8:00PM, Fri 28 Aug 2026", "address":"Stoke St Michael's Church, Coventry"},
-    ]
-    existing = {e["title"].lower() for e in events}
-    for k in known:
-        if k["title"].lower() not in existing:
-            events.append({**k, "sourceUrl": wmp_url, "fetchedAt": STAMP})
+            if re.search(r'\d{1,2}:\d{2}(AM|PM)', sib_text, re.I) and re.search(r'\d{4}', sib_text):
+                date_str = sib_text
+            elif not address and len(sib_text) > 5 and "calendar" not in sib_text.lower():
+                address = sib_text
+            if hasattr(sib, "name") and sib.name in ["h4","h5","h3","h2"]:
+                break
+        if title and date_str:
+            events.append({"title": title, "date": date_str,
+                            "address": address or "Coventry",
+                            "sourceUrl": wmp_url,
+                            "fetchedAt": STAMP})
+
+    # Site was reachable but listed no meetings — write empty list so the page
+    # shows "No upcoming events" (not a site-down message).
     print(f"  Total events: {len(events)}")
     write_json("police_events.json", events)
 
