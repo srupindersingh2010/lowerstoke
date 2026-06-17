@@ -11,21 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    container:
+      image: mcr.microsoft.com/playwright/python:v1.44.0-jammy
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4 google-auth google-auth-httplib2 google-api-python-client playwright
-          playwright install chromium
-          playwright install-deps chromium
+      - name: Install Python dependencies
+        run: pip install requests beautifulsoup4 google-auth google-auth-httplib2 google-api-python-client playwright
 
       - name: Run scraper
         env:
