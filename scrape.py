@@ -473,6 +473,52 @@ def scrape_planning():
         print("  Drive API not available — skipping Drive source")
 
     # ------------------------------------------------------------------
+    # SOURCE C: Coventry Planning Portal — weekly received list (Playwright)
+    # ------------------------------------------------------------------
+    print("  Fetching Coventry planning portal weekly list via browser...")
+    WEEKLY_URL = "https://planandregulatory.coventry.gov.uk/planning/index.html?fa=getReceivedWeeklyList"
+    portal_html = browser_get(WEEKLY_URL)
+    if portal_html and len(portal_html) > 1000:
+        psoup = BeautifulSoup(portal_html, "html.parser")
+        table = psoup.find("table", class_=re.compile(r"search", re.I)) or psoup.find("table")
+        if table:
+            headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+            print(f"  Portal table headers: {headers}")
+            for tr in table.find_all("tr")[1:]:
+                cells = tr.find_all("td")
+                if not cells:
+                    continue
+                col = {}
+                for i, h in enumerate(headers):
+                    if i < len(cells):
+                        col[h] = cells[i].get_text(strip=True)
+                ward = col.get("ward", "")
+                if "lower stoke" not in ward.lower():
+                    continue
+                ref_link = cells[0].find("a") if cells else None
+                reference = ref_link.get_text(strip=True) if ref_link else col.get("reference","")
+                href = ref_link.get("href","") if ref_link else ""
+                portal_link = f"https://planandregulatory.coventry.gov.uk{href}" if href.startswith("/") else (PORTAL + "?fa=getApplication&ref=" + reference)
+                apps.append({
+                    "reference":   reference,
+                    "address":     col.get("address",""),
+                    "description": col.get("proposal", col.get("description","")),
+                    "status":      col.get("status","Received"),
+                    "dateLodged":  col.get("valid date", col.get("date","")),
+                    "ward":        ward,
+                    "portalLink":  portal_link,
+                    "source":      "planandregulatory.coventry.gov.uk",
+                    "sourceUrl":   WEEKLY_URL,
+                    "fetchedAt":   STAMP,
+                    "storedAt":    NOW_UTC.timestamp(),
+                })
+                print(f"  Portal app: {reference} | {col.get('address','')[:40]}")
+        else:
+            print("  No table found on portal page")
+    else:
+        print(f"  Portal returned {len(portal_html) if portal_html else 0} chars — may be blocked or JS-only")
+
+    # ------------------------------------------------------------------
     # SOURCE B: planning.data.gov.uk open API (free, no blocking)
     # Lower Stoke ward entity = 800137
     # ------------------------------------------------------------------
