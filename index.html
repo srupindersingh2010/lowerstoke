@@ -387,7 +387,7 @@
             <th style="width:35%;">Location</th>
             <th style="width:5%;"></th>
           </tr></thead>
-          <tbody id="events-box"><tr><td colspan="4" class="loading">Loading events…</td></tr></tbody>
+          <tbody id="events-box"></tbody>
         </table>
       </div>
     </div>
@@ -442,7 +442,7 @@
       <div style="overflow-x:auto;">
         <table class="data-table">
           <thead><tr><th>Meeting</th><th>Time &amp; Date</th><th>Location</th></tr></thead>
-          <tbody id="events-box2"><tr><td colspan="3" class="loading">Loading…</td></tr></tbody>
+          <tbody id="events-box2"></tbody>
         </table>
       </div>
     </div>
@@ -699,7 +699,24 @@
   loadJSON('planning.json',      renderPlanning);
   loadJSON('police_crimes.json', renderCrimes);
   loadJSON('police_team.json',   renderTeam);
-  loadJSON('police_events.json', renderEvents);
+  // Police events: load from JSON (updated by scraper), fall back to known meetings
+  var KNOWN_PACT_EVENTS = [
+    {"title":"Community Pact Meeting - Upper Stoke","date":"6:00PM - 7:00PM, Fri 28 August 2026","address":"Stoke St Michael's Church, Coventry","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Quarterly Wyken PACT meeting","date":"6:00PM - 7:00PM, Tue 15 September 2026","address":"Wyken Community Centre, Westmorland Rd, Coventry CV2 5PY","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Lower Stoke PACT meeting","date":"6:00PM - 7:00PM, Wed 16 September 2026","address":"St Margaret's Church, 50 Walsgrave Road, Coventry CV2 4EB","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Lower Stoke PACT meeting","date":"6:00PM - 7:00PM, Tue 15 December 2026","address":"St Margaret's Church, 50 Walsgrave Road, Coventry CV2 4EB","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Wyken quarterly PACT meeting","date":"6:00PM - 7:00PM, Tue 22 December 2026","address":"Wyken Community Centre, Westmorland Rd, Coventry CV2 5PY","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Lower Stoke PACT meeting","date":"6:00PM - 7:00PM, Mon 15 March 2027","address":"St Margaret's Church, 50 Walsgrave Road, Coventry CV2 4EB","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Wyken Quarterly PACT meeting","date":"6:00PM - 7:00PM, Tue 23 March 2027","address":"Wyken Community Centre, Westmorland Rd, Coventry CV2 5PY","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Lower Stoke PACT meeting","date":"6:00PM - 7:00PM, Mon 21 June 2027","address":"St Margaret's Church, 50 Walsgrave Road, Coventry CV2 4EB","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"},
+    {"title":"Wyken Quarterly PACT meeting","date":"6:00PM - 7:00PM, Tue 22 June 2027","address":"Wyken Community Centre, Westmorland Rd, Coventry CV2 5PY","sourceUrl":"https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area","fetchedAt":"Source: westmidlands.police.uk"}
+  ];
+  // Show known events immediately, then try to load fresher data from JSON
+  renderEvents(KNOWN_PACT_EVENTS);
+  fetch('data/police_events.json?v=' + Date.now())
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(d){ if (d && d.length && !d[0].siteDown) renderEvents(d); })
+    .catch(function(){});
   loadJSON('casework.json',      renderCasework);
 
   // Gallery — only if the JSON file exists (Drive access optional)
