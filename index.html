@@ -476,6 +476,30 @@
       <div id="casework-box"><div class="loading">Loading casework…</div></div>
     </div>
 
+    <div class="card" style="margin-bottom:20px;">
+      <div class="section-header">
+        <h3>🏛️ Coventry Council Meetings — Next 30 Days</h3>
+        <span class="fetch-stamp" id="ts-meetings"></span>
+        <a href="https://edemocracy.coventry.gov.uk/mgCalendarMonthView.aspx?GL=1" target="_blank">Full calendar →</a>
+      </div>
+      <p style="font-size:0.85rem;color:#666;margin-top:0;">
+        Upcoming public meetings of Coventry City Council committees and boards.
+        Source: <a href="https://edemocracy.coventry.gov.uk" target="_blank" style="color:var(--labour-red);">edemocracy.coventry.gov.uk</a>
+      </p>
+      <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead><tr>
+            <th style="width:18%;">Date</th>
+            <th style="width:15%;">Time</th>
+            <th style="width:42%;">Meeting</th>
+            <th style="width:20%;">Location</th>
+            <th style="width:5%;"></th>
+          </tr></thead>
+          <tbody id="meetings-box"><tr><td colspan="5" class="loading">Loading meetings…</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
     <div class="card">
       <div class="section-header">
         <h3>📸 Councillors' Progress &amp; Update Photos</h3>
@@ -650,6 +674,42 @@
     document.getElementById('events-box2').innerHTML = rows2;
   }
 
+  function renderMeetings(data) {
+    stamp('ts-meetings', data.length ? data[0].fetchedAt : '');
+    if (!data.length) {
+      document.getElementById('meetings-box').innerHTML =
+        '<tr><td colspan="5" style="text-align:center;color:#777;">No meetings scheduled in the next 30 days. ' +
+        '<a href="https://edemocracy.coventry.gov.uk/mgCalendarMonthView.aspx?GL=1" target="_blank" style="color:var(--labour-red);">Check full calendar →</a></td></tr>';
+      return;
+    }
+    document.getElementById('meetings-box').innerHTML = data.map(function(m) {
+      // Councillor attendance badges for meetings within 7 days
+      var cllrHtml = '';
+      if (m.withinWeek && m.attendanceChecked) {
+        if (m.ourCouncillors && m.ourCouncillors.length) {
+          cllrHtml = '<div style="margin-top:5px;">' +
+            m.ourCouncillors.map(function(c) {
+              return '<span style="display:inline-block;background:#E8F5E9;color:#1B5E20;font-size:0.7rem;font-weight:bold;padding:2px 7px;border-radius:3px;margin:1px 2px 1px 0;">✓ ' + esc(c) + '</span>';
+            }).join('') + '</div>';
+        } else {
+          cllrHtml = '<div style="margin-top:4px;font-size:0.72rem;color:#aaa;">No Lower Stoke councillors listed</div>';
+        }
+      } else if (m.withinWeek && !m.attendanceChecked) {
+        cllrHtml = '<div style="margin-top:4px;font-size:0.72rem;color:#bbb;">Attendance not yet published</div>';
+      }
+      var rowStyle = m.withinWeek ? ' style="background:#FFFDE7;"' : '';
+      return '<tr' + rowStyle + '>' +
+        '<td><strong>' + esc(m.dayOfWeek) + '</strong><br><span style="color:#555;font-size:0.85rem;">' + esc(m.date) + '</span>' +
+        (m.withinWeek ? '<br><span style="background:var(--labour-red);color:#fff;font-size:0.65rem;padding:1px 5px;border-radius:2px;font-weight:bold;">THIS WEEK</span>' : '') +
+        '</td>' +
+        '<td style="color:#555;white-space:nowrap;">' + esc(m.time) + '</td>' +
+        '<td><strong>' + esc(m.title) + '</strong>' + cllrHtml + '</td>' +
+        '<td style="font-size:0.82rem;color:#666;">' + esc(m.location) + '</td>' +
+        '<td>' + (m.agendaUrl ? '<a href="' + esc(m.agendaUrl) + '" target="_blank" style="font-size:0.75rem;color:var(--labour-red);">Agenda →</a>' : '') + '</td>' +
+        '</tr>';
+    }).join('');
+  }
+
   function renderCasework(data) {
     stamp('ts-cases', data.length ? data[0].fetchedAt : '');
     if (!data.length) {
@@ -712,6 +772,7 @@
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(d){ if (d && d.length && !d[0].siteDown) renderEvents(d); })
     .catch(function(){});
+  loadJSON('council_meetings.json', renderMeetings);
   loadJSON('casework.json',      renderCasework);
 
   // Gallery — only if the JSON file exists (Drive access optional)
