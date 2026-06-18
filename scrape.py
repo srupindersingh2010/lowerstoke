@@ -892,9 +892,124 @@ def write_metadata():
 # =============================================================================
 # MAIN
 # =============================================================================
+def scrape_council_meetings():
+    """Scrape council meetings for next 30 days; check attendance for next 7 days."""
+    print("\n-- Council Meetings (next 30 days) --")
+    BASE_URL  = "https://edemocracy.coventry.gov.uk"
+    OUR_CLLRS = ["mcnicholas", "rupinder singh", "shahnaz akhter"]
+    meetings  = []
+    seen      = set()
+
+    for offset in range(2):
+        dt  = NOW_UTC + timedelta(days=offset * 32)
+        url = (f"{BASE_URL}/mgCalendarAgendaView.aspx"
+               f"?RPID=0&M={dt.month}&DD={dt.year}&CID=0&OT=&C=-1&MR=1")
+        r   = safe_get(url)
+        if not r or r.status_code != 200:
+            print(f"  Could not fetch month {dt.month}/{dt.year}")
+            continue
+        print(f"  Month {dt.month}/{dt.year}: {len(r.text)} chars")
+        soup    = BeautifulSoup(r.text, "html.parser")
+        content = soup.get_text("\n", strip=True)
+        cutoff       = NOW_UTC.date() + timedelta(days=30)
+        week_cutoff  = NOW_UTC.date() + timedelta(days=7)
+        current_date = None
+        current_day  = None
+
+        for line in content.split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+            date_m = re.match(
+                r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+"
+                r"(\d{1,2})(?:st|nd|rd|th)\s+(\w+),\s+(\d{4})", line)
+            if date_m:
+                try:
+                    current_date = datetime.strptime(
+                        f"{date_m.group(2)} {date_m.group(3)} {date_m.group(4)}",
+                        "%d %B %Y").date()
+                    current_day = date_m.group(1)
+                except ValueError:
+                    current_date = None
+                continue
+            if not (current_date and current_date >= NOW_UTC.date() and current_date <= cutoff):
+                continue
+            time_m = re.match(
+                r"(\d{1,2}\.\d{2}\s*(?:am|pm)(?:\s*-\s*\d{1,2}\.\d{2}\s*(?:am|pm))?)"
+                r"\s+Meeting of (.+?)(?:\s+on\s+\d{2}/\d{2}.*)$", line, re.I)
+            if not time_m:
+                continue
+            time_str = time_m.group(1).strip()
+            title    = "Meeting of " + time_m.group(2).strip()
+            loc_m    = re.search(r"-\s+((?:Committee Room|Council Chamber|Diamond Room|Council House)[^-]+?)$", line)
+            location = loc_m.group(1).strip() if loc_m else "Council House"
+
+            # Find agenda URL from the soup links
+            agenda_url = ""
+            for a in soup.find_all("a", href=True):
+                if time_m.group(2)[:20].lower() in a.get_text(strip=True).lower():
+                    href = a["href"]
+                    agenda_url = f"{BASE_URL}{href}" if href.startswith("/") else href
+                    break
+
+            # Find meeting ID for attendance lookup
+            meeting_id  = ""
+            attend_url  = ""
+            mid_m = re.search(r"MId=(\d+)", agenda_url)
+            if mid_m:
+                meeting_id = mid_m.group(1)
+                attend_url = f"{BASE_URL}/mgMeetingAttendance.aspx?ID={meeting_id}"
+
+            key = f"{current_date}{title}"
+            if key in seen:
+                continue
+            seen.add(key)
+
+            # Check attendance for meetings within 7 days
+            our_cllrs_attending = []
+            attendance_checked  = False
+            if attend_url and current_date <= week_cutoff:
+                ra = safe_get(attend_url)
+                if ra and ra.status_code == 200:
+                    attendance_checked = True
+                    asoup = BeautifulSoup(ra.text, "html.parser")
+                    for row in asoup.find_all("tr"):
+                        cells = row.find_all("td")
+                        if len(cells) < 2:
+                            continue
+                        name = cells[0].get_text(strip=True).lower()
+                        status = cells[2].get_text(strip=True) if len(cells) > 2 else ""
+                        for cllr in OUR_CLLRS:
+                            if cllr in name and status.lower() in ("expected", "present"):
+                                # Get display name from the cell
+                                display = cells[0].get_text(strip=True)
+                                display = re.sub(r'^Councillor\s+', '', display)
+                                if display not in our_cllrs_attending:
+                                    our_cllrs_attending.append(display)
+                print(f"  {current_date} {title[:40]} — our cllrs: {our_cllrs_attending or 'none'}")
+
+            meetings.append({
+                "date":               current_date.strftime("%-d %B %Y"),
+                "dayOfWeek":          current_day,
+                "time":               time_str,
+                "title":              title,
+                "location":           location,
+                "agendaUrl":          agenda_url,
+                "attendanceUrl":      attend_url,
+                "withinWeek":         current_date <= week_cutoff,
+                "attendanceChecked":  attendance_checked,
+                "ourCouncillors":     our_cllrs_attending,
+                "sourceUrl":          url,
+                "fetchedAt":          STAMP,
+            })
+
+    print(f"  Total meetings: {len(meetings)}")
+    write_json("council_meetings.json", meetings)
+
+
 if __name__ == "__main__":
     print(f"=== Lower Stoke Ward Scraper - {STAMP} ===\n")
-    for fn in [scrape_news, scrape_planning, scrape_police_events,
+    for fn in [scrape_news, scrape_planning, scrape_council_meetings, scrape_police_events,
                scrape_police_team, scrape_police_crimes, scrape_casework,
                write_metadata]:
         try:
