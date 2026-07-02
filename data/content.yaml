@@ -1,1 +1,41 @@
+# ---------------------------------------------------------------------------
+# Lower Stoke Ward Newsletter — weekly content
+#
+# Edit this file each week (or have your site's build step regenerate it)
+# before Tuesday 08:00. The automation picks up whatever is in here at
+# send-time — nothing else needs to change.
+# ---------------------------------------------------------------------------
+
+issue_title: "Lower Stoke Ward Newsletter"
+issue_date: "" # leave blank to auto-fill with today's date at send time
+intro: >
+  Here's what's happening in Lower Stoke this week — council updates,
+  local events, and ways to get involved.
+
+sections:
+  - heading: "Council & Casework Updates"
+    items:
+      - text: "Latest planning applications affecting the ward"
+        link: "https://www.lowerstoke.co.uk/planning"
+      - text: "Update on the pothole repair programme"
+        link: "https://www.lowerstoke.co.uk/casework"
+
+  - heading: "Local Events"
+    items:
+      - text: "PACT meeting — next Thursday, 7pm, community centre"
+        link: "https://www.lowerstoke.co.uk/events"
+      - text: "Litter pick this Saturday morning — all welcome"
+        link: "https://www.lowerstoke.co.uk/events"
+
+  - heading: "Useful Links"
+    items:
+      - text: "Report a problem to the council"
+        link: "https://www.lowerstoke.co.uk/report"
+      - text: "Read the full site"
+        link: "https://www.lowerstoke.co.uk/"
+
+footer_note: >
+  You're receiving this because you subscribed to the Lower Stoke Ward
+  newsletter. To unsubscribe, email
+  lowerstokenewsletter+unsubscribe@googlegroups.com
 
