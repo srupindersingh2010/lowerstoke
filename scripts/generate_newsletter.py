@@ -190,6 +190,21 @@ def build_policing_section():
     return {"heading": "Local Policing", "entries": entries}
 
 
+def build_police_news_section():
+    items = load_json("police_news.json", [])
+    if not items:
+        return None
+    entries = []
+    for item in items[:6]:
+        entries.append({
+            "title": item.get("title", "Police news"),
+            "detail": truncate(item.get("summary", "")),
+            "meta": item.get("published_display", ""),
+            "link": item.get("link"),
+        })
+    return {"heading": "Coventry Police News (Last 7 Days)", "entries": entries}
+
+
 def build_content():
     meta = load_json("meta.json", {})
     sections = []
@@ -199,6 +214,7 @@ def build_content():
         build_casework_section,
         build_planning_section,
         build_policing_section,
+        build_police_news_section,
     ):
         section = builder()
         if section:
