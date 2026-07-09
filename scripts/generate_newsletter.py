@@ -122,6 +122,13 @@ UNIFIED_EMAIL_NOTE = (
     "lower-stoke-councillors@googlegroups.com"
 )
 
+WEBSITE_NOTE = "Visit the Lower Stoke Ward website: www.lowerstoke.co.uk"
+
+SUBSCRIBE_NOTE = (
+    "To get this newsletter in your inbox every week, send a blank "
+    "email (no subject) to lowerstokenewsletter+subscribe@googlegroups.com"
+)
+
 PROMOTED_BY_NOTE = (
     "Promoted by Rupinder Singh on behalf of Lower Stoke Labour Party, "
     "all at 90 Short Street, Coventry."
@@ -161,6 +168,8 @@ def build_static_info():
         "councillors": councillors,
         "street_surgery_note": STREET_SURGERY_NOTE,
         "unified_email_note": UNIFIED_EMAIL_NOTE,
+        "website_note": WEBSITE_NOTE,
+        "subscribe_note": SUBSCRIBE_NOTE,
         "promoted_by_note": PROMOTED_BY_NOTE,
     }
 
@@ -477,7 +486,9 @@ HTML_TEMPLATE = """
 
   <div class="street-surgery">
     {{ static_info.street_surgery_note }}<br>
-    {{ static_info.unified_email_note }}
+    {{ static_info.unified_email_note }}<br>
+    {{ static_info.website_note }}<br>
+    {{ static_info.subscribe_note }}
   </div>
 
   <div class="footer">{{ footer_note }}</div>
