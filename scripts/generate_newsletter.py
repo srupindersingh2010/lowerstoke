@@ -14,6 +14,7 @@ secrets):
 """
 
 import argparse
+import base64
 import datetime
 import json
 import os
@@ -29,11 +30,105 @@ from weasyprint import HTML
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
+ASSETS_DIR = ROOT / "assets"
 OUTPUT_DIR = ROOT / "output"
 
 MAX_NEWS_ITEMS = 4
 MAX_CASEWORK_ITEMS = 4
 MAX_POLICE_PRIORITIES = 4
+
+# ---------------------------------------------------------------------
+# Fixed "every edition" content — councillor contacts, mission statement,
+# street surgery details, subscribe info, and the promoter statement.
+# Edit these directly in this file if any details change (new mobile
+# number, new photo file, etc.) — this content does NOT come from
+# data/*.json since it rarely changes and should appear in every issue.
+# ---------------------------------------------------------------------
+
+MISSION_STATEMENT = (
+    "We are committed to being visible, accessible, and accountable — "
+    "working alongside residents and standing up for Lower Stoke."
+)
+
+MISSION_BULLETS = [
+    "Regular Street Surgery",
+    "Door-to-door listening",
+    "Contact us: phone, WhatsApp, email, social media or in person.",
+]
+
+# NOTE: photo file names below are best-guess labels based on the order
+# photos appeared in the source file — please confirm each photo matches
+# the right councillor and rename the files in /assets if not, then
+# update the "photo" values below to match.
+COUNCILLORS = [
+    {
+        "name": "Dr. Shahnaz Akhter",
+        "email": "shahnaz.akhter@coventry.gov.uk",
+        "twitter": "@Covlabourparty",
+        "facebook": "Facebook.com/shahnaz.labour",
+        "mobile": None,
+        "photo": "councillor_1_shahnaz_akhter.jpg",
+    },
+    {
+        "name": "Cllr. John McNicholas",
+        "email": "john.mcnicholas@coventry.gov.uk",
+        "twitter": "@CllrJMcNicholas",
+        "facebook": "Facebook.com/JMcN1CH",
+        "mobile": "07968 498860",
+        "photo": "councillor_2_john_mcnicholas.jpg",
+    },
+    {
+        "name": "Cllr. Rupinder Singh",
+        "email": "rupinder.singh@coventry.gov.uk",
+        "twitter": "@Rupinder2010",
+        "facebook": "Facebook.com/singh.rup",
+        "mobile": "07960 962642",
+        "photo": "councillor_3_rupinder_singh.jpg",
+    },
+]
+
+STREET_SURGERY_NOTE = (
+    "Come and talk to us: 10:00 am to 11:00 am, 1st and 3rd Saturday of "
+    "the month, opposite Iceland / Lidl on Binley Road."
+)
+
+UNIFIED_EMAIL_NOTE = (
+    "Unified email for Lower Stoke, which reaches all three councillors: "
+    "lower-stoke-councillors@googlegroups.com"
+)
+
+PROMOTED_BY_NOTE = (
+    "Promoted by Rupinder Singh on behalf of Lower Stoke Labour Party, "
+    "all at 90 Short Street, Coventry."
+)
+
+
+def image_to_data_uri(filename):
+    """Reads an image from /assets and returns it as a base64 data URI,
+    so it's embedded directly in both the PDF and the email — no
+    external image hosting needed, and it always travels with the file."""
+    path = ASSETS_DIR / filename
+    if not path.exists():
+        return None
+    ext = path.suffix.lower().lstrip(".")
+    mime = "jpeg" if ext in ("jpg", "jpeg") else ext
+    with open(path, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode("ascii")
+    return f"data:image/{mime};base64,{encoded}"
+
+
+def build_static_info():
+    councillors = []
+    for c in COUNCILLORS:
+        councillors.append({**c, "photo_data_uri": image_to_data_uri(c["photo"])})
+    return {
+        "mission_statement": MISSION_STATEMENT,
+        "mission_bullets": MISSION_BULLETS,
+        "councillors": councillors,
+        "street_surgery_note": STREET_SURGERY_NOTE,
+        "unified_email_note": UNIFIED_EMAIL_NOTE,
+        "promoted_by_note": PROMOTED_BY_NOTE,
+    }
 
 
 def load_json(filename, default):
@@ -230,6 +325,7 @@ def build_content():
         ),
         "sections": sections,
         "data_refreshed": meta.get("lastUpdated", "unknown"),
+        "static_info": build_static_info(),
         "footer_note": (
             "You're receiving this because you subscribed to the Lower "
             "Stoke Ward newsletter. To unsubscribe, email "
@@ -256,6 +352,21 @@ HTML_TEMPLATE = """
   .item-detail { font-size: 13px; color: #444; margin: 2px 0 0 0; }
   .intro { font-size: 14px; margin-bottom: 20px; }
   .footer { font-size: 11px; color: #777; margin-top: 32px; border-top: 1px solid #eee; padding-top: 12px; }
+
+  .mission-banner { background: #f4f8f5; border-left: 4px solid #14532d; padding: 14px 16px; margin: 24px 0; font-size: 13px; }
+  .mission-banner p { margin: 0 0 8px 0; font-style: italic; color: #333; }
+  .mission-banner ul { list-style: none; padding: 0; margin: 0; }
+  .mission-banner li { margin-bottom: 4px; color: #14532d; font-weight: bold; }
+
+  .councillors-heading { color: #14532d; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 30px; }
+  .councillors-row { display: table; width: 100%; margin-top: 12px; }
+  .councillor-card { display: table-cell; width: 33.33%; text-align: center; padding: 0 8px; vertical-align: top; }
+  .councillor-photo { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; border: 2px solid #e5e5e5; }
+  .councillor-name { font-weight: bold; font-size: 13px; margin-top: 8px; color: #222; }
+  .councillor-detail { font-size: 11px; color: #555; margin-top: 2px; }
+
+  .street-surgery { font-size: 12px; color: #333; margin-top: 20px; padding-top: 10px; border-top: 1px dashed #ccc; }
+  .promoted-by { font-size: 10px; color: #999; margin-top: 10px; }
 </style>
 </head>
 <body>
@@ -280,7 +391,38 @@ HTML_TEMPLATE = """
   </ul>
   {% endfor %}
 
+  <div class="mission-banner">
+    <p>{{ static_info.mission_statement }}</p>
+    <ul>
+      {% for bullet in static_info.mission_bullets %}
+      <li>&#10003; {{ bullet }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <h2 class="councillors-heading">Your Lower Stoke Councillors</h2>
+  <div class="councillors-row">
+    {% for c in static_info.councillors %}
+    <div class="councillor-card">
+      {% if c.photo_data_uri %}
+      <img class="councillor-photo" src="{{ c.photo_data_uri }}" alt="{{ c.name }}">
+      {% endif %}
+      <div class="councillor-name">{{ c.name }}</div>
+      <div class="councillor-detail">{{ c.email }}</div>
+      {% if c.mobile %}<div class="councillor-detail">Mobile: {{ c.mobile }}</div>{% endif %}
+      <div class="councillor-detail">{{ c.twitter }}</div>
+      <div class="councillor-detail">{{ c.facebook }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="street-surgery">
+    {{ static_info.street_surgery_note }}<br>
+    {{ static_info.unified_email_note }}
+  </div>
+
   <div class="footer">{{ footer_note }}</div>
+  <div class="promoted-by">{{ static_info.promoted_by_note }}</div>
 </body>
 </html>
 """
