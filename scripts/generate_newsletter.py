@@ -56,6 +56,31 @@ MISSION_BULLETS = [
     "Contact us: phone, WhatsApp, email, social media or in person.",
 ]
 
+# Longer, warmer version shown at the very top, just under the masthead —
+# distinct styling from the rest of the newsletter. Each item pairs a
+# short lead-in line with its bullet point, edit freely.
+TOP_INTRO_LEAD = (
+    "Rupinder Singh, John McNicholas and Shahnaz Akhter are committed to "
+    "being visible, accessible, and accountable — working alongside "
+    "residents and standing up for Lower Stoke. You can contact us in "
+    "many ways — we're always happy to hear from you."
+)
+
+TOP_INTRO_ITEMS = [
+    {
+        "lead_in": "That's why we hold:",
+        "bullet": "Regular Street Surgery",
+    },
+    {
+        "lead_in": "Through our all-year-round campaign, we also do:",
+        "bullet": "Door-to-door listening",
+    },
+    {
+        "lead_in": "Because our residents are busy people, we're keen to hear from you by:",
+        "bullet": "Phone, WhatsApp, email, social media, or in person",
+    },
+]
+
 # NOTE: photo file names below are best-guess labels based on the order
 # photos appeared in the source file — please confirm each photo matches
 # the right councillor and rename the files in /assets if not, then
@@ -121,9 +146,18 @@ def build_static_info():
     councillors = []
     for c in COUNCILLORS:
         councillors.append({**c, "photo_data_uri": image_to_data_uri(c["photo"])})
+
+    phones = [
+        {"name": c["name"], "mobile": c["mobile"]}
+        for c in COUNCILLORS if c.get("mobile")
+    ]
+
     return {
         "mission_statement": MISSION_STATEMENT,
         "mission_bullets": MISSION_BULLETS,
+        "top_intro_lead": TOP_INTRO_LEAD,
+        "top_intro_items": TOP_INTRO_ITEMS,
+        "councillor_phones": phones,
         "councillors": councillors,
         "street_surgery_note": STREET_SURGERY_NOTE,
         "unified_email_note": UNIFIED_EMAIL_NOTE,
@@ -357,6 +391,14 @@ HTML_TEMPLATE = """
   .mission-banner p { margin: 0 0 8px 0; font-style: italic; color: #333; }
   .mission-banner ul { list-style: none; padding: 0; margin: 0; }
   .mission-banner li { margin-bottom: 4px; color: #14532d; font-weight: bold; }
+  .mission-banner .phones { margin-top: 10px; padding-top: 8px; border-top: 1px dashed #ccd8cf; font-style: normal; color: #333; }
+  .mission-banner .phones strong { color: #14532d; }
+
+  .top-welcome { font-family: Georgia, 'Times New Roman', serif; background: #fdf6ec; border: 1px solid #e8d9b8; border-radius: 6px; padding: 16px 18px; margin: 16px 0 22px 0; }
+  .top-welcome p.lead { font-size: 14px; color: #7a1f3d; margin: 0 0 12px 0; line-height: 1.5; }
+  .top-welcome .intro-item { margin-bottom: 8px; }
+  .top-welcome .intro-item .lead-in { font-size: 12px; color: #96622f; font-style: italic; display: block; margin-bottom: 2px; }
+  .top-welcome .intro-item .bullet { font-size: 14px; color: #7a1f3d; font-weight: bold; }
 
   .councillors-heading { color: #14532d; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 30px; }
   .councillors-row { display: table; width: 100%; margin-top: 12px; }
@@ -372,6 +414,17 @@ HTML_TEMPLATE = """
 <body>
   <h1>{{ issue_title }}</h1>
   <p class="subtitle">{{ issue_date }} &middot; data refreshed {{ data_refreshed }}</p>
+
+  <div class="top-welcome">
+    <p class="lead">{{ static_info.top_intro_lead }}</p>
+    {% for item in static_info.top_intro_items %}
+    <div class="intro-item">
+      <span class="lead-in">{{ item.lead_in }}</span>
+      <span class="bullet">&#10003; {{ item.bullet }}</span>
+    </div>
+    {% endfor %}
+  </div>
+
   <p class="intro">{{ intro }}</p>
 
   {% for section in sections %}
@@ -398,6 +451,12 @@ HTML_TEMPLATE = """
       <li>&#10003; {{ bullet }}</li>
       {% endfor %}
     </ul>
+    {% if static_info.councillor_phones %}
+    <div class="phones">
+      <strong>Councillor phone numbers:</strong>
+      {% for p in static_info.councillor_phones %}{{ p.name }}: {{ p.mobile }}{% if not loop.last %} &middot; {% endif %}{% endfor %}
+    </div>
+    {% endif %}
   </div>
 
   <h2 class="councillors-heading">Your Lower Stoke Councillors</h2>
