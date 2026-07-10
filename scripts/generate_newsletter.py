@@ -405,7 +405,14 @@ def build_content():
         "footer_note": (
             "You're receiving this because you subscribed to the Lower "
             "Stoke Ward newsletter. To unsubscribe, email "
-            "lowerstokenewsletter+unsubscribe@googlegroups.com"
+            "lowerstokenewsletter+unsubscribe@googlegroups.com. "
+            "Contains public sector information licensed under the Open "
+            "Government Licence v3.0 (sources: Coventry City Council, West "
+            "Midlands Combined Authority, West Midlands Police, data.police.uk). "
+            "Crime locations are approximate points assigned by police.uk to "
+            "protect privacy. This newsletter is independent and is not "
+            "affiliated with, or endorsed by, Coventry City Council, the West "
+            "Midlands Combined Authority or West Midlands Police."
         ),
     }
 
