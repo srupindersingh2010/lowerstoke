@@ -407,12 +407,7 @@ def build_content():
             "Stoke Ward newsletter. To unsubscribe, email "
             "lowerstokenewsletter+unsubscribe@googlegroups.com. "
             "Contains public sector information licensed under the Open "
-            "Government Licence v3.0 (sources: Coventry City Council, West "
-            "Midlands Combined Authority, West Midlands Police, data.police.uk). "
-            "Crime locations are approximate points assigned by police.uk to "
-            "protect privacy. This newsletter is independent and is not "
-            "affiliated with, or endorsed by, Coventry City Council, the West "
-            "Midlands Combined Authority or West Midlands Police."
+            "Government Licence v3.0."
         ),
     }
 
@@ -436,6 +431,10 @@ HTML_TEMPLATE = """
   .item-detail { font-size: 13px; color: #444; margin: 2px 0 0 0; }
   .intro { font-size: 14px; margin-bottom: 20px; }
   .footer { font-size: 11px; color: #777; margin-top: 32px; border-top: 1px solid #eee; padding-top: 12px; }
+  .about-info { font-size: 11px; color: #666; line-height: 1.6; margin-top: 28px; padding: 12px 14px; background: #F7F7F7; border: 1px solid #E5E5E5; border-radius: 6px; }
+  .about-info h3 { font-size: 12px; color: #333; margin: 0 0 6px; }
+  .about-info p { margin: 0 0 8px; }
+  .about-info p:last-child { margin-bottom: 0; }
 
   .mission-banner { background: #f4f8f5; border-left: 4px solid #14532d; padding: 14px 16px; margin: 24px 0; font-size: 13px; }
   .mission-banner p { margin: 0 0 8px 0; font-style: italic; color: #333; }
@@ -517,6 +516,23 @@ HTML_TEMPLATE = """
     {{ static_info.unified_email_note }}<br>
     {{ static_info.website_note }}<br>
     <strong>{{ static_info.subscribe_note }}</strong>
+  </div>
+
+  <div class="about-info">
+    <h3>About the information in this newsletter</h3>
+    <p>This newsletter brings together publicly available information for the benefit of Lower
+    Stoke residents. Sources include Coventry City Council, the West Midlands Combined Authority,
+    West Midlands Police and the Home Office's data.police.uk service.
+    <strong>Contains public sector information licensed under the
+    <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.</strong></p>
+    <p>Crime statistics are generated from data published monthly on data.police.uk. Crime
+    locations are approximate points assigned by police.uk to protect privacy, and figures may be
+    revised by police forces after first publication. News headlines and summaries link to, and
+    remain the copyright of, their original publishers.</p>
+    <p>This newsletter is independent and is not affiliated with, or endorsed by, Coventry City
+    Council, the West Midlands Combined Authority or West Midlands Police. Information is provided
+    in good faith and kept as current as the sources allow, but for official purposes please always
+    refer to the original source.</p>
   </div>
 
   <div class="footer">{{ footer_note }}</div>
