@@ -135,7 +135,7 @@ SUBSCRIBE_NOTE = (
 )
 
 PROMOTED_BY_NOTE = (
-    "Promoted by Rupinder Singh on behalf of Lower Stoke Labour Party, "
+    "Promoted by Rupinder Singh on behalf of Lower Stoke Councillors, "
     "all at 90 Short Street, Coventry."
 )
 
