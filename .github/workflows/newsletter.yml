@@ -2,8 +2,8 @@ name: Send weekly newsletter
 
 on:
   schedule:
-    # 07:00 UTC every Tuesday (~8am UK time, see README note on DST).
-    - cron: "0 7 * * 2"
+    # 08:00 UTC every Wednesday (= 9am UK time during British Summer Time).
+    - cron: "0 8 * * 3"
   workflow_dispatch: {}
 
 jobs:
