@@ -281,11 +281,12 @@ def build_planning_section():
         "entries": [{
             "title": "View recent planning applications on the Coventry Council portal",
             "detail": (
-                "Click the link above to see the most recent planning "
-                "applications, then look for 'Lower Stoke' under the Ward "
-                "column to find applications in our ward."
+                "See the most recent planning applications, then look for "
+                "'Lower Stoke' under the Ward column to find applications in "
+                "our ward. Reading on paper? Type this address into your web "
+                "browser: https://tinyurl.com/cov-plan-recent"
             ),
-            "meta": None,
+            "meta": "https://tinyurl.com/cov-plan-recent",
             "link": "https://tinyurl.com/cov-plan-recent",
         }],
     }
