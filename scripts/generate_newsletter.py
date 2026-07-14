@@ -274,28 +274,21 @@ def build_casework_section():
 
 
 def build_planning_section():
-    items = load_json("planning.json", [])
-    if not items:
-        return None
-    if items and items[0].get("siteDown"):
-        return {
-            "heading": "Planning Applications",
-            "entries": [{
-                "title": "The council's planning portal was temporarily unavailable when this was compiled",
-                "detail": "Check directly for any new applications affecting Lower Stoke.",
-                "meta": None,
-                "link": items[0].get("sourceUrl"),
-            }],
-        }
-    entries = []
-    for item in items[:6]:
-        entries.append({
-            "title": item.get("address", item.get("reference", "Planning application")),
-            "detail": truncate(item.get("description", "")),
-            "meta": f"{item.get('reference', '')} · {item.get('status', '')}",
-            "link": item.get("portalLink"),
-        })
-    return {"heading": "Planning Applications", "entries": entries}
+    # Static section: readers view applications directly on the Council
+    # portal rather than us reproducing them here.
+    return {
+        "heading": "Planning Applications",
+        "entries": [{
+            "title": "View recent planning applications on the Coventry Council portal",
+            "detail": (
+                "Click the link above to see the most recent planning "
+                "applications, then look for 'Lower Stoke' under the Ward "
+                "column to find applications in our ward."
+            ),
+            "meta": None,
+            "link": "https://tinyurl.com/cov-plan-recent",
+        }],
+    }
 
 
 def build_policing_section():
