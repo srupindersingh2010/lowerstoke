@@ -273,21 +273,36 @@ def build_casework_section():
     return {"heading": "Councillor Casework Updates", "entries": entries}
 
 
-def build_planning_section():
+PLANNING_URL = "https://tinyurl.com/cov-plan-recent"
+
+
+def build_planning_section(variant="email"):
     # Static section: readers view applications directly on the Council
-    # portal rather than us reproducing them here.
+    # portal. The email gets a clickable address; the PDF (often printed
+    # on paper) gets a type-it-in instruction. The address appears once
+    # in each version.
+    if variant == "pdf":
+        detail = (
+            "If you want to view recent planning applications on the "
+            "Coventry Council portal, type this address into your web "
+            f"browser: {PLANNING_URL} — then look for 'Lower Stoke' under "
+            "the Ward column to find applications in our ward."
+        )
+    else:
+        detail = (
+            "If you want to view recent planning applications on the "
+            "Coventry Council portal, click on this address: "
+            f'<a href="{PLANNING_URL}">{PLANNING_URL}</a> — then look for '
+            "'Lower Stoke' under the Ward column to find applications in "
+            "our ward."
+        )
     return {
         "heading": "Planning Applications",
         "entries": [{
-            "title": "View recent planning applications on the Coventry Council portal",
-            "detail": (
-                "See the most recent planning applications, then look for "
-                "'Lower Stoke' under the Ward column to find applications in "
-                "our ward. Reading on paper? Type this address into your web "
-                "browser: https://tinyurl.com/cov-plan-recent"
-            ),
-            "meta": "https://tinyurl.com/cov-plan-recent",
-            "link": "https://tinyurl.com/cov-plan-recent",
+            "title": "",
+            "detail": detail,
+            "meta": None,
+            "link": None,
         }],
     }
 
@@ -369,14 +384,14 @@ def build_police_news_section():
     return {"heading": "Coventry Police News (Last 7 Days)", "entries": entries}
 
 
-def build_content():
+def build_content(variant="email"):
     meta = load_json("meta.json", {})
     sections = []
     for builder in (
         build_news_section,
         build_meetings_section,
         build_casework_section,
-        build_planning_section,
+        lambda: build_planning_section(variant),
         build_policing_section,
         build_police_priorities_section,
         build_police_news_section,
@@ -584,11 +599,13 @@ def main():
 
     OUTPUT_DIR.mkdir(exist_ok=True)
 
-    content = build_content()
+    content = build_content("email")
     html_str = render_html(content)
 
+    # The PDF gets its own wording (type-in address instead of click).
+    pdf_html = render_html(build_content("pdf"))
     pdf_path = OUTPUT_DIR / f"newsletter-{datetime.date.today().isoformat()}.pdf"
-    build_pdf(html_str, pdf_path)
+    build_pdf(pdf_html, pdf_path)
     html_path = OUTPUT_DIR / f"newsletter-{datetime.date.today().isoformat()}.html"
     html_path.write_text(html_str, encoding="utf-8")
 
