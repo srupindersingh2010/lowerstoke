@@ -1,13 +1,23 @@
 [
   {
+    "title": "Support for people affected by honour-based abuse",
+    "summary": "The Council has been highlighting victims of honour-based abuse (HBA) as part of a national day.",
+    "link": "https://www.coventry.gov.uk/news/article/5537/support-for-people-affected-by-honour-based-abuse",
+    "date": "15 July 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "16 July 2026 at 10:20"
+  },
+  {
     "title": "Award recognition for Coventry parks",
     "summary": "Six of Coventry’s parks and green spaces have been awarded the prestigious Green Flag Award, an international quality mark for the best parks and green spaces in the country.",
     "link": "https://www.coventry.gov.uk/news/article/5536/award-recognition-for-coventry-parks",
     "date": "14 July 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 July 2026 at 11:04"
+    "fetchedAt": "16 July 2026 at 10:20"
   },
   {
     "title": "Joint operation to close shop selling illicit substances in Coventry",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 July 2026 at 11:04"
+    "fetchedAt": "16 July 2026 at 10:20"
   },
   {
     "title": "Major Spon End house building gets underway",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 July 2026 at 11:04"
+    "fetchedAt": "16 July 2026 at 10:20"
   },
   {
     "title": "Helping victims of Anti-Social Behaviour",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 July 2026 at 11:04"
+    "fetchedAt": "16 July 2026 at 10:20"
   },
   {
     "title": "Over £60,000 awarded to support community arts projects across Coventry",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 July 2026 at 11:04"
-  },
-  {
-    "title": "Coventry celebrates with a night of live music at Coventry Music’s Summer Showcase!",
-    "summary": "Hundreds of people gathered on Tuesday 30 June to enjoy an evening of live performances from young and talented musicians from across Coventry at Warwick Arts Centre.",
-    "link": "https://www.coventry.gov.uk/news/article/5532/coventry-celebrates-with-a-night-of-live-music-at-coventry-music-s-summer-showcase-",
-    "date": "7 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 July 2026 at 11:04"
+    "fetchedAt": "16 July 2026 at 10:20"
   }
 ]
