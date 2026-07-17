@@ -1,13 +1,23 @@
 [
   {
+    "title": "Coventry shop ordered to close for repeated sales of illegal tobacco, smoking products, and vapes",
+    "summary": "Tile Hill Mini Market, located on Station Avenue within Coventry, has been ordered to close for persistently selling illegal tobacco and vapes for the third time.",
+    "link": "https://www.coventry.gov.uk/news/article/5538/coventry-shop-ordered-to-close-for-repeated-sales-of-illegal-tobacco-smoking-products-and-vapes",
+    "date": "16 July 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "17 July 2026 at 10:14"
+  },
+  {
     "title": "Support for people affected by honour-based abuse",
     "summary": "The Council has been highlighting victims of honour-based abuse (HBA) as part of a national day.",
     "link": "https://www.coventry.gov.uk/news/article/5537/support-for-people-affected-by-honour-based-abuse",
     "date": "15 July 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "16 July 2026 at 11:10"
+    "fetchedAt": "17 July 2026 at 10:14"
   },
   {
     "title": "Award recognition for Coventry parks",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "16 July 2026 at 11:10"
+    "fetchedAt": "17 July 2026 at 10:14"
   },
   {
     "title": "Joint operation to close shop selling illicit substances in Coventry",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "16 July 2026 at 11:10"
+    "fetchedAt": "17 July 2026 at 10:14"
   },
   {
     "title": "Major Spon End house building gets underway",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "16 July 2026 at 11:10"
+    "fetchedAt": "17 July 2026 at 10:14"
   },
   {
     "title": "Helping victims of Anti-Social Behaviour",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "16 July 2026 at 11:10"
-  },
-  {
-    "title": "Over £60,000 awarded to support community arts projects across Coventry",
-    "summary": "Fifteen creative projects across Coventry have been awarded funding through the Council’s new Made in Cov Arts & Creative Grants programme.",
-    "link": "https://www.coventry.gov.uk/news/article/5530/over-60-000-awarded-to-support-community-arts-projects-across-coventry",
-    "date": "8 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "16 July 2026 at 11:10"
+    "fetchedAt": "17 July 2026 at 10:14"
   }
 ]
