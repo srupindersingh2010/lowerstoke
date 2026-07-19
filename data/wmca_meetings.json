@@ -8,7 +8,7 @@
     "agendaUrl": "https://wmca.moderngov.co.uk/ieListDocuments.aspx?CId=135&MId=2137",
     "withinWeek": true,
     "sourceUrl": "https://wmca.moderngov.co.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "18 July 2026 at 10:28"
+    "fetchedAt": "19 July 2026 at 10:08"
   },
   {
     "date": "29 July 2026",
@@ -19,7 +19,7 @@
     "agendaUrl": "https://wmca.moderngov.co.uk/ieListDocuments.aspx?CId=305&MId=2294",
     "withinWeek": false,
     "sourceUrl": "https://wmca.moderngov.co.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "18 July 2026 at 10:28"
+    "fetchedAt": "19 July 2026 at 10:08"
   },
   {
     "date": "17 August 2026",
@@ -30,6 +30,6 @@
     "agendaUrl": "https://wmca.moderngov.co.uk/ieListDocuments.aspx?CId=135&MId=2138",
     "withinWeek": false,
     "sourceUrl": "https://wmca.moderngov.co.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "18 July 2026 at 10:28"
+    "fetchedAt": "19 July 2026 at 10:08"
   }
 ]
