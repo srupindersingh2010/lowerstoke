@@ -1,13 +1,33 @@
 [
   {
+    "title": "Football match shines spotlight on victims of domestic abuse",
+    "summary": "Colleagues in our Housing and Homelessness Team have been linking with Sky Blues in the Community to host a World Cup-inspired football tournament recently.",
+    "link": "https://www.coventry.gov.uk/news/article/5540/football-match-shines-spotlight-on-victims-of-domestic-abuse",
+    "date": "22 July 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "22 July 2026 at 10:31"
+  },
+  {
+    "title": "City centre set for a Big Summer Takeover with free family events on Saturdays in August",
+    "summary": "Coventry City Council is bringing a burst of summer energy to the city centre this August with the Big Summer Takeover – a month‑long series of free family events in the city centre at weekends",
+    "link": "https://www.coventry.gov.uk/news/article/5539/city-centre-set-for-a-big-summer-takeover-with-free-family-events-on-saturdays-in-august",
+    "date": "21 July 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "22 July 2026 at 10:31"
+  },
+  {
     "title": "Coventry shop ordered to close for repeated sales of illegal tobacco, smoking products, and vapes",
     "summary": "Tile Hill Mini Market, located on Station Avenue within Coventry, has been ordered to close for persistently selling illegal tobacco and vapes for the third time.",
     "link": "https://www.coventry.gov.uk/news/article/5538/coventry-shop-ordered-to-close-for-repeated-sales-of-illegal-tobacco-smoking-products-and-vapes",
     "date": "16 July 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "title": "Support for people affected by honour-based abuse",
@@ -17,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "title": "Award recognition for Coventry parks",
@@ -27,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "title": "Joint operation to close shop selling illicit substances in Coventry",
@@ -37,26 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 July 2026 at 11:26"
-  },
-  {
-    "title": "Major Spon End house building gets underway",
-    "summary": "Construction has started to build new affordable homes in the first phase part of a  regeneration scheme in Spon End.",
-    "link": "https://www.coventry.gov.uk/news/article/5534/major-spon-end-house-building-gets-underway",
-    "date": "9 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 July 2026 at 11:26"
-  },
-  {
-    "title": "Helping victims of Anti-Social Behaviour",
-    "summary": "Coventry City Council is strengthening its work to support repeat victims of anti-social behaviour (ASB).",
-    "link": "https://www.coventry.gov.uk/news/article/5533/helping-victims-of-anti-social-behaviour",
-    "date": "8 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   }
 ]

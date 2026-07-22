@@ -11,7 +11,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "23 July 2026",
@@ -27,7 +27,7 @@
       "John Douglas McNicholas"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "27 July 2026",
@@ -43,7 +43,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "28 July 2026",
@@ -60,7 +60,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "29 July 2026",
@@ -70,11 +70,11 @@
     "location": "Council House, Earl Street, Coventry CV1 5RR",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=723&MId=13759",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13759",
-    "withinWeek": false,
-    "attendanceChecked": false,
+    "withinWeek": true,
+    "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "12 August 2026",
@@ -88,7 +88,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "13 August 2026",
@@ -102,7 +102,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "17 August 2026",
@@ -116,6 +116,6 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   }
 ]

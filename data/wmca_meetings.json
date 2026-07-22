@@ -6,9 +6,9 @@
     "title": "Meeting ofInvestment Zone Boardon 29/07 at 2.00 pm",
     "location": "West Midlands Regional Chamber, WMCA offices, 16 Summer Lane, Birmingham, B19 3SD",
     "agendaUrl": "https://wmca.moderngov.co.uk/ieListDocuments.aspx?CId=305&MId=2294",
-    "withinWeek": false,
+    "withinWeek": true,
     "sourceUrl": "https://wmca.moderngov.co.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   },
   {
     "date": "17 August 2026",
@@ -19,6 +19,6 @@
     "agendaUrl": "https://wmca.moderngov.co.uk/ieListDocuments.aspx?CId=135&MId=2138",
     "withinWeek": false,
     "sourceUrl": "https://wmca.moderngov.co.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "21 July 2026 at 11:26"
+    "fetchedAt": "22 July 2026 at 10:31"
   }
 ]
