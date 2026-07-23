@@ -1,13 +1,23 @@
 [
   {
+    "title": "Investment transforms historic Tile Hill homes",
+    "summary": "Forty historic homes in Coventry have been transformed following the completion of a £2.1 million refurbishment programme.",
+    "link": "https://www.coventry.gov.uk/news/article/5541/investment-transforms-historic-tile-hill-homes",
+    "date": "23 July 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "23 July 2026 at 10:28"
+  },
+  {
     "title": "Football match shines spotlight on victims of domestic abuse",
     "summary": "Colleagues in our Housing and Homelessness Team have been linking with Sky Blues in the Community to host a World Cup-inspired football tournament recently.",
     "link": "https://www.coventry.gov.uk/news/article/5540/football-match-shines-spotlight-on-victims-of-domestic-abuse",
     "date": "22 July 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "22 July 2026 at 11:26"
+    "fetchedAt": "23 July 2026 at 10:28"
   },
   {
     "title": "City centre set for a Big Summer Takeover with free family events on Saturdays in August",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "22 July 2026 at 11:26"
+    "fetchedAt": "23 July 2026 at 10:28"
   },
   {
     "title": "Coventry shop ordered to close for repeated sales of illegal tobacco, smoking products, and vapes",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "22 July 2026 at 11:26"
+    "fetchedAt": "23 July 2026 at 10:28"
   },
   {
     "title": "Support for people affected by honour-based abuse",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "22 July 2026 at 11:26"
+    "fetchedAt": "23 July 2026 at 10:28"
   },
   {
     "title": "Award recognition for Coventry parks",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "22 July 2026 at 11:26"
-  },
-  {
-    "title": "Joint operation to close shop selling illicit substances in Coventry",
-    "summary": "We’ve closed down a shop in Coventry following reports of criminal activity, including the repeated sale of illegal vapes and illicit tobacco.",
-    "link": "https://www.coventry.gov.uk/news/article/5535/joint-operation-to-close-shop-selling-illicit-substances-in-coventry",
-    "date": "10 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "22 July 2026 at 11:26"
+    "fetchedAt": "23 July 2026 at 10:28"
   }
 ]
