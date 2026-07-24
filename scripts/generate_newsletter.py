@@ -156,10 +156,24 @@ def image_to_data_uri(filename):
     return f"data:image/{mime};base64,{encoded}"
 
 
-def build_static_info():
+def councillor_cid(filename):
+    """Stable Content-ID for a councillor photo, used to reference the
+    image attached to the email as <img src="cid:...">."""
+    return "photo_" + re.sub(r"[^A-Za-z0-9]+", "_", Path(filename).stem).strip("_")
+
+
+def build_static_info(use_cid=False):
+    """use_cid=True  -> email: photos referenced as cid: and attached to
+                        the message (Gmail/Outlook block base64 data URIs).
+       use_cid=False -> PDF: photos embedded as base64 data URIs, which
+                        WeasyPrint renders correctly."""
     councillors = []
     for c in COUNCILLORS:
-        councillors.append({**c, "photo_data_uri": image_to_data_uri(c["photo"])})
+        if use_cid:
+            uri = f"cid:{councillor_cid(c['photo'])}" if (ASSETS_DIR / c["photo"]).exists() else None
+        else:
+            uri = image_to_data_uri(c["photo"])
+        councillors.append({**c, "photo_data_uri": uri})
 
     phones = [
         {"name": c["name"], "mobile": c["mobile"]}
@@ -412,7 +426,7 @@ def build_content(variant="email"):
         ),
         "sections": sections,
         "data_refreshed": meta.get("lastUpdated", "unknown"),
-        "static_info": build_static_info(),
+        "static_info": build_static_info(use_cid=(variant == "email")),
         "footer_note": (
             "You're receiving this because you subscribed to the Lower "
             "Stoke Ward newsletter. To unsubscribe, email "
@@ -583,6 +597,25 @@ def send_email(html_str, pdf_path, content):
     msg["To"] = to_address
     msg.set_content("This email requires an HTML-capable email client to view.")
     msg.add_alternative(html_str, subtype="html")
+
+    # Attach each councillor photo as a related inline part, so the
+    # cid: references in the HTML resolve. This must be added to the
+    # HTML part (the last alternative), not the top-level message.
+    html_part = msg.get_payload()[-1]
+    for c in COUNCILLORS:
+        img_path = ASSETS_DIR / c["photo"]
+        if not img_path.exists():
+            continue
+        cid = councillor_cid(c["photo"])
+        with open(img_path, "rb") as f:
+            html_part.add_related(
+                f.read(),
+                maintype="image",
+                subtype="jpeg",
+                cid=f"<{cid}>",
+                filename=c["photo"],
+                disposition="inline",
+            )
 
     with open(pdf_path, "rb") as f:
         msg.add_attachment(
