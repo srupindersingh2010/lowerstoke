@@ -94,12 +94,12 @@ TOP_INTRO_ITEMS = [
 # match their real contents, swap these two values back.
 COUNCILLORS = [
     {
-        "name": "Dr. Shahnaz Akhter",
-        "email": "shahnaz.akhter@coventry.gov.uk",
-        "twitter": "@Covlabourparty",
-        "facebook": "Facebook.com/shahnaz.labour",
-        "mobile": None,
-        "photo": "councillor_2_john_mcnicholas.jpg",
+        "name": "Cllr. Rupinder Singh",
+        "email": "rupinder.singh@coventry.gov.uk",
+        "twitter": "@Rupinder2010",
+        "facebook": "Facebook.com/singh.rup",
+        "mobile": "07960 962642",
+        "photo": "councillor_3_rupinder_singh.jpg",
     },
     {
         "name": "Cllr. John McNicholas",
@@ -110,12 +110,12 @@ COUNCILLORS = [
         "photo": "councillor_1_shahnaz_akhter.jpg",
     },
     {
-        "name": "Cllr. Rupinder Singh",
-        "email": "rupinder.singh@coventry.gov.uk",
-        "twitter": "@Rupinder2010",
-        "facebook": "Facebook.com/singh.rup",
-        "mobile": "07960 962642",
-        "photo": "councillor_3_rupinder_singh.jpg",
+        "name": "Dr. Shahnaz Akhter",
+        "email": "shahnaz.akhter@coventry.gov.uk",
+        "twitter": "@Covlabourparty",
+        "facebook": "Facebook.com/shahnaz.labour",
+        "mobile": None,
+        "photo": "councillor_2_john_mcnicholas.jpg",
     },
 ]
 
@@ -512,7 +512,7 @@ HTML_TEMPLATE = """
     {% for c in static_info.councillors %}
     <div class="councillor-card">
       {% if c.photo_data_uri %}
-      <img class="councillor-photo" src="{{ c.photo_data_uri }}" alt="{{ c.name }}">
+      <img class="councillor-photo" src="{{ c.photo_data_uri }}" alt="{{ c.name }}" width="90" height="90" border="0" style="display:block;margin:0 auto;width:90px;height:90px;border-radius:50%;object-fit:cover;border:2px solid #e5e5e5;">
       {% endif %}
       <div class="councillor-name">{{ c.name }}</div>
       <div class="councillor-detail">{{ c.email }}</div>
