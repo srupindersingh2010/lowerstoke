@@ -86,10 +86,12 @@ TOP_INTRO_ITEMS = [
     },
 ]
 
-# NOTE: photo file names below are best-guess labels based on the order
-# photos appeared in the source file — please confirm each photo matches
-# the right councillor and rename the files in /assets if not, then
-# update the "photo" values below to match.
+# NOTE: the two files below are misnamed in /assets — the file called
+# councillor_1_shahnaz_akhter.jpg actually contains John's photo, and
+# councillor_2_john_mcnicholas.jpg actually contains Shahnaz's. The
+# "photo" values are therefore crossed over here so each councillor
+# gets the right picture. If the files in /assets are ever renamed to
+# match their real contents, swap these two values back.
 COUNCILLORS = [
     {
         "name": "Dr. Shahnaz Akhter",
@@ -97,7 +99,7 @@ COUNCILLORS = [
         "twitter": "@Covlabourparty",
         "facebook": "Facebook.com/shahnaz.labour",
         "mobile": None,
-        "photo": "councillor_1_shahnaz_akhter.jpg",
+        "photo": "councillor_2_john_mcnicholas.jpg",
     },
     {
         "name": "Cllr. John McNicholas",
@@ -105,7 +107,7 @@ COUNCILLORS = [
         "twitter": "@CllrJMcNicholas",
         "facebook": "Facebook.com/JMcN1CH",
         "mobile": "07968 498860",
-        "photo": "councillor_2_john_mcnicholas.jpg",
+        "photo": "councillor_1_shahnaz_akhter.jpg",
     },
     {
         "name": "Cllr. Rupinder Singh",
@@ -457,6 +459,7 @@ HTML_TEMPLATE = """
   .top-welcome .intro-item { margin-bottom: 8px; }
   .top-welcome .intro-item .lead-in { font-size: 12px; color: #96622f; font-style: italic; display: block; margin-bottom: 2px; }
   .top-welcome .intro-item .bullet { font-size: 14px; color: #7a1f3d; font-weight: bold; }
+  .top-welcome .intro-item .tick { font-family: Arial, Helvetica, sans-serif; color: #14532d; font-size: 11px; line-height: 1; margin-right: 7px; }
 
   .councillors-heading { color: #14532d; font-size: 16px; border-bottom: 1px solid #ddd; padding-bottom: 4px; margin-top: 30px; }
   .councillors-row { display: table; width: 100%; margin-top: 12px; }
@@ -499,7 +502,7 @@ HTML_TEMPLATE = """
     {% for item in static_info.top_intro_items %}
     <div class="intro-item">
       <span class="lead-in">{{ item.lead_in }}</span>
-      <span class="bullet">&#10003; {{ item.bullet }}</span>
+      <span class="bullet"><span class="tick">&#9679;</span>{{ item.bullet }}</span>
     </div>
     {% endfor %}
   </div>
