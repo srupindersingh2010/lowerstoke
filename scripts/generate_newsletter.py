@@ -419,11 +419,7 @@ def build_content(variant="email"):
     return {
         "issue_title": "Lower Stoke Ward Newsletter",
         "issue_date": datetime.date.today().strftime("%d %B %Y"),
-        "intro": (
-            "Here's what's happening in Lower Stoke this week — pulled "
-            "automatically from council news, meetings, casework, planning "
-            "and policing updates."
-        ),
+        "intro": "Here's what's happening in Lower Stoke and wider Coventry.",
         "sections": sections,
         "data_refreshed": meta.get("lastUpdated", "unknown"),
         "static_info": build_static_info(use_cid=(variant == "email")),
