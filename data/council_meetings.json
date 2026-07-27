@@ -13,7 +13,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
   },
   {
     "date": "28 July 2026",
@@ -30,7 +30,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
   },
   {
     "date": "29 July 2026",
@@ -44,7 +44,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
   },
   {
     "date": "12 August 2026",
@@ -58,7 +58,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
   },
   {
     "date": "13 August 2026",
@@ -72,7 +72,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
   },
   {
     "date": "17 August 2026",
@@ -86,7 +86,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
   },
   {
     "date": "25 August 2026",
@@ -100,6 +100,20 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "26 July 2026 at 11:02"
+    "fetchedAt": "27 July 2026 at 11:48"
+  },
+  {
+    "date": "26 August 2026",
+    "dayOfWeek": "Wednesday",
+    "time": "10.00 am - 12.00 pm",
+    "title": "Meeting ofScrutiny Co-ordination Committeeon 26/08 at 10.00 am - 12.00 pm",
+    "location": "Council House, Coventry",
+    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=151&MId=13823",
+    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13823",
+    "withinWeek": false,
+    "attendanceChecked": false,
+    "ourCouncillors": [],
+    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
+    "fetchedAt": "27 July 2026 at 11:48"
   }
 ]
