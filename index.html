@@ -495,22 +495,6 @@
         </div>
       </div>
     </div>
-    <!-- PACT meetings also shown here -->
-    <div class="card" style="margin-top:20px;">
-      <div class="section-header">
-        <h3>👮 Upcoming PACT (Police and Communities Together) Meetings — Stoke &amp; Wyken</h3>
-        <a href="https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area" target="_blank">View all on westmidlands.police.uk →</a>
-      </div>
-      <p style="font-size:0.84rem;color:#666;margin:-4px 0 12px;">
-        Source: <a href="https://www.westmidlands.police.uk/area/your-area/west-midlands/coventry/stoke-and-wyken/meetings-and-events/top-reported-crimes-in-this-area" target="_blank" style="color:var(--labour-red);">West Midlands Police website</a>
-      </p>
-      <div style="overflow-x:auto;">
-        <table class="data-table">
-          <thead><tr><th>Meeting</th><th>Time &amp; Date</th><th>Location</th></tr></thead>
-          <tbody id="events-box2"></tbody>
-        </table>
-      </div>
-    </div>
   </div><!-- /page3 -->
 
   <!-- PAGE 4 — REPORT AN ISSUE -->
@@ -946,7 +930,6 @@
         '<a href="' + wmpUrl + '" target="_blank" style="color:var(--labour-red);font-weight:bold;">Check directly on westmidlands.police.uk →</a>' +
         '</td></tr>';
       document.getElementById('events-box').innerHTML  = msg;
-      document.getElementById('events-box2').innerHTML = msg.replace('colspan="4"', 'colspan="3"');
       return;
     }
     stamp('ts-events', data.length ? data[0].fetchedAt : '');
@@ -957,10 +940,6 @@
         }).join('')
       : '<tr><td colspan="4" style="text-align:center;color:#777;">No upcoming events listed on WMP website. <a href="' + wmpUrl + '" target="_blank" style="color:var(--labour-red);">Check WMP website →</a></td></tr>';
     document.getElementById('events-box').innerHTML = rows;
-    var rows2 = data.length
-      ? data.map(function(e){ return '<tr><td><strong>'+esc(e.title)+'</strong></td><td>'+esc(e.date)+'</td><td>'+esc(e.address)+'</td></tr>'; }).join('')
-      : '<tr><td colspan="3" style="text-align:center;color:#777;">No upcoming events listed.</td></tr>';
-    document.getElementById('events-box2').innerHTML = rows2;
   }
 
   function renderMeetings(data) {
