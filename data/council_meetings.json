@@ -1,23 +1,9 @@
 [
   {
-    "date": "29 July 2026",
-    "dayOfWeek": "Wednesday",
-    "time": "2.00 pm - 4.00 pm",
-    "title": "Meeting ofNEW - Cabinet Member for City Serviceson 29/07 at 2.00 pm - 4.00 pm",
-    "location": "Council House, Earl Street, Coventry CV1 5RR",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=723&MId=13759",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13759",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "29 July 2026 at 11:41"
-  },
-  {
     "date": "12 August 2026",
     "dayOfWeek": "Wednesday",
     "time": "12.30 pm - 2.00 pm",
-    "title": "Meeting ofCabinet Member for Adult Serviceson 12/08 at 12.30 pm - 2.00 pm",
+    "title": "Meeting ofCANCELLED - Cabinet Member for Adult Serviceson 12/08 at 12.30 pm - 2.00 pm",
     "location": "Council House, Coventry",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=710&MId=13840",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13840",
@@ -25,7 +11,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "29 July 2026 at 11:41"
+    "fetchedAt": "30 July 2026 at 09:15"
   },
   {
     "date": "13 August 2026",
@@ -39,7 +25,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "29 July 2026 at 11:41"
+    "fetchedAt": "30 July 2026 at 09:15"
   },
   {
     "date": "17 August 2026",
@@ -53,7 +39,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "29 July 2026 at 11:41"
+    "fetchedAt": "30 July 2026 at 09:15"
   },
   {
     "date": "25 August 2026",
@@ -67,7 +53,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "29 July 2026 at 11:41"
+    "fetchedAt": "30 July 2026 at 09:15"
   },
   {
     "date": "26 August 2026",
@@ -81,6 +67,6 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=7&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "29 July 2026 at 11:41"
+    "fetchedAt": "30 July 2026 at 09:15"
   }
 ]
