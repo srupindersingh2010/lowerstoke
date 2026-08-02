@@ -11,7 +11,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "1 August 2026 at 11:02"
+    "fetchedAt": "2 August 2026 at 10:13"
   },
   {
     "date": "13 August 2026",
@@ -25,7 +25,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "1 August 2026 at 11:02"
+    "fetchedAt": "2 August 2026 at 10:13"
   },
   {
     "date": "17 August 2026",
@@ -39,7 +39,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "1 August 2026 at 11:02"
+    "fetchedAt": "2 August 2026 at 10:13"
   },
   {
     "date": "25 August 2026",
@@ -53,7 +53,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "1 August 2026 at 11:02"
+    "fetchedAt": "2 August 2026 at 10:13"
   },
   {
     "date": "26 August 2026",
@@ -67,6 +67,20 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "1 August 2026 at 11:02"
+    "fetchedAt": "2 August 2026 at 10:13"
+  },
+  {
+    "date": "1 September 2026",
+    "dayOfWeek": "Tuesday",
+    "time": "2.00 pm - 4.00 pm",
+    "title": "Meeting ofCabineton 01/09 at 2.00 pm - 4.00 pm",
+    "location": "Council House, Coventry",
+    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=124&MId=13674",
+    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13674",
+    "withinWeek": false,
+    "attendanceChecked": false,
+    "ourCouncillors": [],
+    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
+    "fetchedAt": "2 August 2026 at 10:13"
   }
 ]
