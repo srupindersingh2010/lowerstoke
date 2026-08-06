@@ -11,7 +11,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "13 August 2026",
@@ -21,11 +21,13 @@
     "location": "Council House, Coventry",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=147&MId=13769",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13769",
-    "withinWeek": false,
-    "attendanceChecked": false,
-    "ourCouncillors": [],
+    "withinWeek": true,
+    "attendanceChecked": true,
+    "ourCouncillors": [
+      "Shahnaz Akhter"
+    ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "17 August 2026",
@@ -39,7 +41,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "25 August 2026",
@@ -53,7 +55,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "26 August 2026",
@@ -67,7 +69,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "1 September 2026",
@@ -81,7 +83,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "2 September 2026",
@@ -95,7 +97,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "3 September 2026",
@@ -109,7 +111,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   },
   {
     "date": "3 September 2026",
@@ -123,6 +125,6 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=8&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "5 August 2026 at 11:36"
+    "fetchedAt": "6 August 2026 at 10:43"
   }
 ]
