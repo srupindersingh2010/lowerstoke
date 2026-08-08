@@ -1,13 +1,23 @@
 [
   {
+    "title": "Coombe Abbey Park scores highly in national visitor attraction rating",
+    "summary": "Coombe Abbey Park has been recognised as one of the region’s leading visitor attractions, with a high-scoring rating by VisitEngland.",
+    "link": "https://www.coventry.gov.uk/news/article/5546/coombe-abbey-park-scores-highly-in-national-visitor-attraction-rating",
+    "date": "7 August 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "8 August 2026 at 08:52"
+  },
+  {
     "title": "Hidden books to spread the joy of reading",
     "summary": "Children and families are being invited to ‘Look for a Book’ when they’re out and about in the city.",
     "link": "https://www.coventry.gov.uk/news/article/5545/hidden-books-to-spread-the-joy-of-reading",
     "date": "4 August 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "7 August 2026 at 10:00"
+    "fetchedAt": "8 August 2026 at 08:52"
   },
   {
     "title": "Communities invited to shape grants programme to support local events",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "7 August 2026 at 10:00"
+    "fetchedAt": "8 August 2026 at 08:52"
   },
   {
     "title": "PlayZones set to start opening across Coventry",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "7 August 2026 at 10:00"
+    "fetchedAt": "8 August 2026 at 08:52"
   },
   {
     "title": "Investment transforms historic Tile Hill homes",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "7 August 2026 at 10:00"
+    "fetchedAt": "8 August 2026 at 08:52"
   },
   {
     "title": "Football match shines spotlight on victims of domestic abuse",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "7 August 2026 at 10:00"
-  },
-  {
-    "title": "City centre set for a Big Summer Takeover with free family events on Saturdays in August",
-    "summary": "Coventry City Council is bringing a burst of summer energy to the city centre this August with the Big Summer Takeover – a month‑long series of free family events in the city centre at weekends",
-    "link": "https://www.coventry.gov.uk/news/article/5539/city-centre-set-for-a-big-summer-takeover-with-free-family-events-on-saturdays-in-august",
-    "date": "21 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "7 August 2026 at 10:00"
+    "fetchedAt": "8 August 2026 at 08:52"
   }
 ]
