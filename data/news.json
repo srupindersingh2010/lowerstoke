@@ -1,13 +1,23 @@
 [
   {
+    "title": "Success for Coventry students as 2026 results maintain high standards",
+    "summary": "Congratulations to Coventry sixth form students who are celebrating their achievements after receiving their provisional A level and vocational qualification results for 2026.",
+    "link": "https://www.coventry.gov.uk/news/article/5547/success-for-coventry-students-as-2026-results-maintain-high-standards",
+    "date": "13 August 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "14 August 2026 at 09:21"
+  },
+  {
     "title": "Coombe Abbey Park scores highly in national visitor attraction rating",
     "summary": "Coombe Abbey Park has been recognised as one of the region’s leading visitor attractions, with a high-scoring rating by VisitEngland.",
     "link": "https://www.coventry.gov.uk/news/article/5546/coombe-abbey-park-scores-highly-in-national-visitor-attraction-rating",
     "date": "7 August 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 August 2026 at 10:13"
+    "fetchedAt": "14 August 2026 at 09:21"
   },
   {
     "title": "Hidden books to spread the joy of reading",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 August 2026 at 10:13"
+    "fetchedAt": "14 August 2026 at 09:21"
   },
   {
     "title": "Communities invited to shape grants programme to support local events",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 August 2026 at 10:13"
+    "fetchedAt": "14 August 2026 at 09:21"
   },
   {
     "title": "PlayZones set to start opening across Coventry",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 August 2026 at 10:13"
+    "fetchedAt": "14 August 2026 at 09:21"
   },
   {
     "title": "Investment transforms historic Tile Hill homes",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 August 2026 at 10:13"
-  },
-  {
-    "title": "Football match shines spotlight on victims of domestic abuse",
-    "summary": "Colleagues in our Housing and Homelessness Team have been linking with Sky Blues in the Community to host a World Cup-inspired football tournament recently.",
-    "link": "https://www.coventry.gov.uk/news/article/5540/football-match-shines-spotlight-on-victims-of-domestic-abuse",
-    "date": "22 July 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 August 2026 at 10:13"
+    "fetchedAt": "14 August 2026 at 09:21"
   }
 ]
