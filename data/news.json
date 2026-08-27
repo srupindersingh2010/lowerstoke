@@ -1,13 +1,23 @@
 [
   {
+    "title": "New bus service to welcome Coventry City back to the Premier League",
+    "summary": "Mayor Richard Parker has struck a deal to launch a direct bus service linking Coventry Arena and Coventry Railway Station, after a request from Coventry City Council and Coventry City Football Club.",
+    "link": "https://www.coventry.gov.uk/news/article/5551/new-bus-service-to-welcome-coventry-city-back-to-the-premier-league",
+    "date": "26 August 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "27 August 2026 at 19:11"
+  },
+  {
     "title": "Digital access for all: Coventry shows Government what's working",
     "summary": "Representatives from the Department for Digital, Culture, Media and Sport (DCMS) visited Coventry to learn about #CovConnects, the Council's digital inclusion programme.",
     "link": "https://www.coventry.gov.uk/news/article/5550/digital-access-for-all-coventry-shows-government-what-s-working",
     "date": "25 August 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "26 August 2026 at 09:45"
+    "fetchedAt": "27 August 2026 at 19:11"
   },
   {
     "title": "Coventry students celebrate GCSE success as English and Maths results improve",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "26 August 2026 at 09:45"
+    "fetchedAt": "27 August 2026 at 19:11"
   },
   {
     "title": "‘Bold Start, Bright Futures’, giving Coventry children the Best Start in Life",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "26 August 2026 at 09:45"
+    "fetchedAt": "27 August 2026 at 19:11"
   },
   {
     "title": "Success for Coventry students as 2026 results maintain high standards",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "26 August 2026 at 09:45"
+    "fetchedAt": "27 August 2026 at 19:11"
   },
   {
     "title": "Coombe Abbey Park scores highly in national visitor attraction rating",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "26 August 2026 at 09:45"
-  },
-  {
-    "title": "Hidden books to spread the joy of reading",
-    "summary": "Children and families are being invited to ‘Look for a Book’ when they’re out and about in the city.",
-    "link": "https://www.coventry.gov.uk/news/article/5545/hidden-books-to-spread-the-joy-of-reading",
-    "date": "4 August 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "26 August 2026 at 09:45"
+    "fetchedAt": "27 August 2026 at 19:11"
   }
 ]
