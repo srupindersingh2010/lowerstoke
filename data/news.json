@@ -1,13 +1,43 @@
 [
   {
+    "title": "Major improvements planned for Longford Nature Park to boost wildlife and public accessibility",
+    "summary": "Longford Nature Park is set to benefit from a series of improvements designed to enhance wildlife habitats and make the site more accessible for visitors.",
+    "link": "https://www.coventry.gov.uk/news/article/5554/major-improvements-planned-for-longford-nature-park-to-boost-wildlife-and-public-accessibility",
+    "date": "3 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "4 September 2026 at 13:03"
+  },
+  {
+    "title": "Coventry’s rich story told in a fresh new visitor guide",
+    "summary": "Coventry has a brand new visitor guide to showcase the city’s rich heritage, diverse culture and outstanding visitor attractions.",
+    "link": "https://www.coventry.gov.uk/news/article/5553/coventry-s-rich-story-told-in-a-fresh-new-visitor-guide",
+    "date": "3 September 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "4 September 2026 at 13:03"
+  },
+  {
+    "title": "The Hill Group successfully moves and stores historic grade II listed mural at City Centre South",
+    "summary": "The Hill Group has successfully lifted and securely stored the Grade II listed Three Tuns Mural, one of Coventry’s most distinctive pieces of post-war public art.",
+    "link": "https://www.coventry.gov.uk/news/article/5552/the-hill-group-successfully-moves-and-stores-historic-grade-ii-listed-mural-at-city-centre-south",
+    "date": "3 September 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "4 September 2026 at 13:03"
+  },
+  {
     "title": "New bus service to welcome Coventry City back to the Premier League",
     "summary": "Mayor Richard Parker has struck a deal to launch a direct bus service linking Coventry Arena and Coventry Railway Station, after a request from Coventry City Council and Coventry City Football Club.",
     "link": "https://www.coventry.gov.uk/news/article/5551/new-bus-service-to-welcome-coventry-city-back-to-the-premier-league",
     "date": "26 August 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "3 September 2026 at 13:40"
+    "fetchedAt": "4 September 2026 at 13:03"
   },
   {
     "title": "Digital access for all: Coventry shows Government what's working",
@@ -17,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "3 September 2026 at 13:40"
+    "fetchedAt": "4 September 2026 at 13:03"
   },
   {
     "title": "Coventry students celebrate GCSE success as English and Maths results improve",
@@ -27,36 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "3 September 2026 at 13:40"
-  },
-  {
-    "title": "‘Bold Start, Bright Futures’, giving Coventry children the Best Start in Life",
-    "summary": "A launch event is being held on Friday 21st August between 1.30-3.30 pm to tell families all about the Best Start in Life programme in Coventry and what it can offer.",
-    "link": "https://www.coventry.gov.uk/news/article/5548/-bold-start-bright-futures-giving-coventry-children-the-best-start-in-life",
-    "date": "20 August 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "3 September 2026 at 13:40"
-  },
-  {
-    "title": "Success for Coventry students as 2026 results maintain high standards",
-    "summary": "Congratulations to Coventry sixth form students who are celebrating their achievements after receiving their provisional A level and vocational qualification results for 2026.",
-    "link": "https://www.coventry.gov.uk/news/article/5547/success-for-coventry-students-as-2026-results-maintain-high-standards",
-    "date": "13 August 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "3 September 2026 at 13:40"
-  },
-  {
-    "title": "Coombe Abbey Park scores highly in national visitor attraction rating",
-    "summary": "Coombe Abbey Park has been recognised as one of the region’s leading visitor attractions, with a high-scoring rating by VisitEngland.",
-    "link": "https://www.coventry.gov.uk/news/article/5546/coombe-abbey-park-scores-highly-in-national-visitor-attraction-rating",
-    "date": "7 August 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "3 September 2026 at 13:40"
+    "fetchedAt": "4 September 2026 at 13:03"
   }
 ]
