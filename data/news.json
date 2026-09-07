@@ -1,13 +1,33 @@
 [
   {
+    "title": "Jobs, wellbeing support and community action events coming to Bell Green",
+    "summary": "Residents in Bell Green are invited to free activities for Wednesday 16 September to Friday 18 September.",
+    "link": "https://www.coventry.gov.uk/news/article/5555/jobs-wellbeing-support-and-community-action-events-coming-to-bell-green-",
+    "date": "7 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "7 September 2026 at 14:25"
+  },
+  {
+    "title": "Mayor announces £5.5m to bring homeless in from the cold this Christmas",
+    "summary": "Richard Parker, Mayor of the West Midlands, has made a commitment to see every person sleeping rough in the region offered a roof over their head this Christmas, and support to stay there.",
+    "link": "https://www.coventry.gov.uk/news/article/5556/mayor-announces-5-5m-to-bring-homeless-in-from-the-cold-this-christmas",
+    "date": "7 September 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "7 September 2026 at 14:25"
+  },
+  {
     "title": "Major improvements planned for Longford Nature Park to boost wildlife and public accessibility",
     "summary": "Longford Nature Park is set to benefit from a series of improvements designed to enhance wildlife habitats and make the site more accessible for visitors.",
     "link": "https://www.coventry.gov.uk/news/article/5554/major-improvements-planned-for-longford-nature-park-to-boost-wildlife-and-public-accessibility",
     "date": "3 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "6 September 2026 at 13:00"
+    "fetchedAt": "7 September 2026 at 14:25"
   },
   {
     "title": "Coventry’s rich story told in a fresh new visitor guide",
@@ -17,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "6 September 2026 at 13:00"
+    "fetchedAt": "7 September 2026 at 14:25"
   },
   {
     "title": "The Hill Group successfully moves and stores historic grade II listed mural at City Centre South",
@@ -27,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "6 September 2026 at 13:00"
+    "fetchedAt": "7 September 2026 at 14:25"
   },
   {
     "title": "New bus service to welcome Coventry City back to the Premier League",
@@ -37,26 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "6 September 2026 at 13:00"
-  },
-  {
-    "title": "Digital access for all: Coventry shows Government what's working",
-    "summary": "Representatives from the Department for Digital, Culture, Media and Sport (DCMS) visited Coventry to learn about #CovConnects, the Council's digital inclusion programme.",
-    "link": "https://www.coventry.gov.uk/news/article/5550/digital-access-for-all-coventry-shows-government-what-s-working",
-    "date": "25 August 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "6 September 2026 at 13:00"
-  },
-  {
-    "title": "Coventry students celebrate GCSE success as English and Maths results improve",
-    "summary": "Thousands of Coventry students are celebrating their GCSE results today, with the city seeing encouraging improvements in both English and maths.",
-    "link": "https://www.coventry.gov.uk/news/article/5549/coventry-students-celebrate-gcse-success-as-english-and-maths-results-improve",
-    "date": "20 August 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "6 September 2026 at 13:00"
+    "fetchedAt": "7 September 2026 at 14:25"
   }
 ]
