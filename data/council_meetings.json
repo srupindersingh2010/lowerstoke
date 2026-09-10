@@ -1,19 +1,5 @@
 [
   {
-    "date": "9 September 2026",
-    "dayOfWeek": "Wednesday",
-    "time": "2.00 pm - 4.00 pm",
-    "title": "Meeting ofFinance and Corporate Services Scrutiny Board (1)on 09/09 at 2.00 pm - 4.00 pm",
-    "location": "Council House, Coventry",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=568&MId=13791",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13791",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
-  },
-  {
     "date": "15 September 2026",
     "dayOfWeek": "Tuesday",
     "time": "2.00 pm - 4.00 pm",
@@ -25,7 +11,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "16 September 2026",
@@ -41,7 +27,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "16 September 2026",
@@ -55,7 +41,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "17 September 2026",
@@ -65,11 +51,11 @@
     "location": "Council House, Coventry",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=569&MId=13798",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13798",
-    "withinWeek": false,
-    "attendanceChecked": false,
+    "withinWeek": true,
+    "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "17 September 2026",
@@ -79,11 +65,13 @@
     "location": "Council House, Coventry",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=147&MId=13778",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13778",
-    "withinWeek": false,
-    "attendanceChecked": false,
-    "ourCouncillors": [],
+    "withinWeek": true,
+    "attendanceChecked": true,
+    "ourCouncillors": [
+      "Shahnaz Akhter"
+    ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "21 September 2026",
@@ -97,7 +85,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "22 September 2026",
@@ -111,7 +99,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "23 September 2026",
@@ -125,7 +113,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "23 September 2026",
@@ -139,7 +127,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "24 September 2026",
@@ -153,7 +141,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "29 September 2026",
@@ -167,7 +155,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "2 October 2026",
@@ -181,7 +169,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "7 October 2026",
@@ -195,7 +183,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "date": "8 October 2026",
@@ -209,6 +197,6 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   }
 ]

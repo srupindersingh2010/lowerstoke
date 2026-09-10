@@ -1,13 +1,23 @@
 [
   {
+    "title": "Help influence the future of Adult Social Care",
+    "summary": "A new national commission is seeking to understand people’s views of Adult Social Care.",
+    "link": "https://www.coventry.gov.uk/news/article/5558/help-influence-the-future-of-adult-social-care",
+    "date": "10 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "10 September 2026 at 13:10"
+  },
+  {
     "title": "Coventry shop ordered to close for persistently selling illegal products",
     "summary": "We've closed down a shop in Coventry following reports of criminal activity.",
     "link": "https://www.coventry.gov.uk/news/article/5557/coventry-shop-ordered-to-close-for-persistently-selling-illegal-products",
     "date": "7 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "title": "Jobs, wellbeing support and community action events coming to Bell Green",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "title": "Mayor announces £5.5m to bring homeless in from the cold this Christmas",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "title": "Major improvements planned for Longford Nature Park to boost wildlife and public accessibility",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   },
   {
     "title": "Coventry’s rich story told in a fresh new visitor guide",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "9 September 2026 at 13:47"
-  },
-  {
-    "title": "The Hill Group successfully moves and stores historic grade II listed mural at City Centre South",
-    "summary": "The Hill Group has successfully lifted and securely stored the Grade II listed Three Tuns Mural, one of Coventry’s most distinctive pieces of post-war public art.",
-    "link": "https://www.coventry.gov.uk/news/article/5552/the-hill-group-successfully-moves-and-stores-historic-grade-ii-listed-mural-at-city-centre-south",
-    "date": "3 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "9 September 2026 at 13:47"
+    "fetchedAt": "10 September 2026 at 13:10"
   }
 ]
