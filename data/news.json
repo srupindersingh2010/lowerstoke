@@ -1,13 +1,23 @@
 [
   {
+    "title": "Heritage Open Days 2026",
+    "summary": "Heritage Open Days are returning to Coventry, as the city's historical and cultural venues open their doors for people to visit - completely free of charge.",
+    "link": "https://www.coventry.gov.uk/news/article/5559/heritage-open-days-2026",
+    "date": "11 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "11 September 2026 at 13:08"
+  },
+  {
     "title": "Help influence the future of Adult Social Care",
     "summary": "A new national commission is seeking to understand people’s views of Adult Social Care.",
     "link": "https://www.coventry.gov.uk/news/article/5558/help-influence-the-future-of-adult-social-care",
     "date": "10 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 September 2026 at 13:45"
+    "fetchedAt": "11 September 2026 at 13:08"
   },
   {
     "title": "Coventry shop ordered to close for persistently selling illegal products",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 September 2026 at 13:45"
+    "fetchedAt": "11 September 2026 at 13:08"
   },
   {
     "title": "Jobs, wellbeing support and community action events coming to Bell Green",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 September 2026 at 13:45"
+    "fetchedAt": "11 September 2026 at 13:08"
   },
   {
     "title": "Mayor announces £5.5m to bring homeless in from the cold this Christmas",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 September 2026 at 13:45"
+    "fetchedAt": "11 September 2026 at 13:08"
   },
   {
     "title": "Major improvements planned for Longford Nature Park to boost wildlife and public accessibility",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 September 2026 at 13:45"
-  },
-  {
-    "title": "Coventry’s rich story told in a fresh new visitor guide",
-    "summary": "Coventry has a brand new visitor guide to showcase the city’s rich heritage, diverse culture and outstanding visitor attractions.",
-    "link": "https://www.coventry.gov.uk/news/article/5553/coventry-s-rich-story-told-in-a-fresh-new-visitor-guide",
-    "date": "3 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 September 2026 at 13:45"
+    "fetchedAt": "11 September 2026 at 13:08"
   }
 ]
