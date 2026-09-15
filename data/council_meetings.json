@@ -11,7 +11,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "16 September 2026",
@@ -27,7 +27,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "16 September 2026",
@@ -41,7 +41,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "17 September 2026",
@@ -55,7 +55,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "17 September 2026",
@@ -71,7 +71,7 @@
       "Shahnaz Akhter"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "21 September 2026",
@@ -83,25 +83,9 @@
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13750",
     "withinWeek": true,
     "attendanceChecked": true,
-    "ourCouncillors": [
-      "Rupinder Singh"
-    ],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
-  },
-  {
-    "date": "22 September 2026",
-    "dayOfWeek": "Tuesday",
-    "time": "10.30 am - 2.00 pm",
-    "title": "Meeting ofLicensing and Regulatory Sub-Committee (Hearing)on 22/09 at 10.30 am - 2.00 pm",
-    "location": "Council House, Coventry",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=298&MId=13869",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13869",
-    "withinWeek": false,
-    "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "23 September 2026",
@@ -115,7 +99,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "23 September 2026",
@@ -129,7 +113,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "24 September 2026",
@@ -143,7 +127,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "29 September 2026",
@@ -157,7 +141,21 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
+  },
+  {
+    "date": "30 September 2026",
+    "dayOfWeek": "Wednesday",
+    "time": "10.30 am - 2.00 pm",
+    "title": "Meeting ofLicensing and Regulatory Sub-Committee (Hearing)on 30/09 at 10.30 am - 2.00 pm",
+    "location": "Council House, Coventry",
+    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=298&MId=13869",
+    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13869",
+    "withinWeek": false,
+    "attendanceChecked": false,
+    "ourCouncillors": [],
+    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "2 October 2026",
@@ -171,7 +169,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "7 October 2026",
@@ -185,7 +183,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "8 October 2026",
@@ -199,7 +197,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "13 October 2026",
@@ -213,7 +211,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
   },
   {
     "date": "14 October 2026",
@@ -227,6 +225,34 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "14 September 2026 at 15:48"
+    "fetchedAt": "15 September 2026 at 13:35"
+  },
+  {
+    "date": "15 October 2026",
+    "dayOfWeek": "Thursday",
+    "time": "10.00 am - 12.00 pm",
+    "title": "Meeting ofEducation and Children's Services Scrutiny Board (2)on 15/10 at 10.00 am - 12.00 pm",
+    "location": "Council House, Coventry",
+    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=569&MId=13799",
+    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13799",
+    "withinWeek": false,
+    "attendanceChecked": false,
+    "ourCouncillors": [],
+    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
+    "fetchedAt": "15 September 2026 at 13:35"
+  },
+  {
+    "date": "15 October 2026",
+    "dayOfWeek": "Thursday",
+    "time": "3.00 pm",
+    "title": "Meeting ofCabinet Member for Community Safety and Cohesionon 15/10 at 3.00 pm",
+    "location": "Council House, Coventry",
+    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=791&MId=13854",
+    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13854",
+    "withinWeek": false,
+    "attendanceChecked": false,
+    "ourCouncillors": [],
+    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
+    "fetchedAt": "15 September 2026 at 13:35"
   }
 ]
