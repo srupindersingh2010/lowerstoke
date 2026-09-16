@@ -1,13 +1,23 @@
 [
   {
+    "title": "Joint inspections on illegal Houses in Multiple Occupation (HMOs)",
+    "summary": "The Council’s HMO Enforcement Team (along with partner agencies) regularly carry out targeted enforcement visits across the city.",
+    "link": "https://www.coventry.gov.uk/news/article/5560/joint-inspections-on-illegal-houses-in-multiple-occupation-hmos-",
+    "date": "16 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "16 September 2026 at 13:31"
+  },
+  {
     "title": "Heritage Open Days 2026",
     "summary": "Heritage Open Days are returning to Coventry, as the city's historical and cultural venues open their doors for people to visit - completely free of charge.",
     "link": "https://www.coventry.gov.uk/news/article/5559/heritage-open-days-2026",
     "date": "11 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 September 2026 at 14:14"
+    "fetchedAt": "16 September 2026 at 13:31"
   },
   {
     "title": "Help influence the future of Adult Social Care",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 September 2026 at 14:14"
+    "fetchedAt": "16 September 2026 at 13:31"
   },
   {
     "title": "Coventry shop ordered to close for persistently selling illegal products",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 September 2026 at 14:14"
+    "fetchedAt": "16 September 2026 at 13:31"
   },
   {
     "title": "Jobs, wellbeing support and community action events coming to Bell Green",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 September 2026 at 14:14"
+    "fetchedAt": "16 September 2026 at 13:31"
   },
   {
     "title": "Mayor announces £5.5m to bring homeless in from the cold this Christmas",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 September 2026 at 14:14"
-  },
-  {
-    "title": "Major improvements planned for Longford Nature Park to boost wildlife and public accessibility",
-    "summary": "Longford Nature Park is set to benefit from a series of improvements designed to enhance wildlife habitats and make the site more accessible for visitors.",
-    "link": "https://www.coventry.gov.uk/news/article/5554/major-improvements-planned-for-longford-nature-park-to-boost-wildlife-and-public-accessibility",
-    "date": "3 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "15 September 2026 at 14:14"
+    "fetchedAt": "16 September 2026 at 13:31"
   }
 ]
