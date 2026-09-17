@@ -1,35 +1,5 @@
 [
   {
-    "date": "16 September 2026",
-    "dayOfWeek": "Wednesday",
-    "time": "10.00 am - 12.00 pm",
-    "title": "Meeting ofScrutiny Co-ordination Committeeon 16/09 at 10.00 am - 12.00 pm",
-    "location": "Council House, Coventry",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=151&MId=13824",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13824",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [
-      "Rupinder Singh"
-    ],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
-  },
-  {
-    "date": "16 September 2026",
-    "dayOfWeek": "Wednesday",
-    "time": "1.00 pm - 2.00 pm",
-    "title": "Meeting ofCabinet Member for Adult Serviceson 16/09 at 1.00 pm - 2.00 pm",
-    "location": "Council House, Coventry",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=710&MId=13841",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13841",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
-  },
-  {
     "date": "17 September 2026",
     "dayOfWeek": "Thursday",
     "time": "10.00 am - 12.00 pm",
@@ -41,7 +11,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "17 September 2026",
@@ -57,7 +27,7 @@
       "Shahnaz Akhter"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "21 September 2026",
@@ -71,7 +41,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "23 September 2026",
@@ -87,7 +57,7 @@
       "Shahnaz Akhter"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "23 September 2026",
@@ -101,7 +71,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "24 September 2026",
@@ -111,11 +81,11 @@
     "location": "Council House, Coventry",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=161&MId=13706",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13706",
-    "withinWeek": false,
-    "attendanceChecked": false,
+    "withinWeek": true,
+    "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "29 September 2026",
@@ -129,7 +99,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "30 September 2026",
@@ -143,7 +113,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "2 October 2026",
@@ -157,7 +127,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "7 October 2026",
@@ -171,7 +141,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "8 October 2026",
@@ -185,7 +155,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "13 October 2026",
@@ -199,7 +169,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "14 October 2026",
@@ -213,7 +183,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "15 October 2026",
@@ -227,7 +197,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "15 October 2026",
@@ -241,7 +211,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   },
   {
     "date": "16 October 2026",
@@ -255,6 +225,6 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=9&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "16 September 2026 at 14:13"
+    "fetchedAt": "17 September 2026 at 13:31"
   }
 ]
