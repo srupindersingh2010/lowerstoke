@@ -1,13 +1,23 @@
 [
   {
+    "title": "Ganesh Puja celebrated in Coventry",
+    "summary": "Coventry’s Hindu community came together on Monday 14 September for Shree Ganesh Mahotsav 2026, a community celebration organised by Shree Varashidhi Vinayaka Friend’s Circle.",
+    "link": "https://www.coventry.gov.uk/news/article/5561/ganesh-puja-celebrated-in-coventry",
+    "date": "17 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "17 September 2026 at 14:07"
+  },
+  {
     "title": "Joint inspections on illegal Houses in Multiple Occupation (HMOs)",
     "summary": "The Council’s HMO Enforcement Team (along with partner agencies) regularly carry out targeted enforcement visits across the city.",
     "link": "https://www.coventry.gov.uk/news/article/5560/joint-inspections-on-illegal-houses-in-multiple-occupation-hmos-",
     "date": "16 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 13:31"
+    "fetchedAt": "17 September 2026 at 14:07"
   },
   {
     "title": "Heritage Open Days 2026",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 13:31"
+    "fetchedAt": "17 September 2026 at 14:07"
   },
   {
     "title": "Help influence the future of Adult Social Care",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 13:31"
+    "fetchedAt": "17 September 2026 at 14:07"
   },
   {
     "title": "Coventry shop ordered to close for persistently selling illegal products",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 13:31"
+    "fetchedAt": "17 September 2026 at 14:07"
   },
   {
     "title": "Jobs, wellbeing support and community action events coming to Bell Green",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 13:31"
-  },
-  {
-    "title": "Mayor announces £5.5m to bring homeless in from the cold this Christmas",
-    "summary": "Richard Parker, Mayor of the West Midlands, has made a commitment to see every person sleeping rough in the region offered a roof over their head this Christmas, and support to stay there.",
-    "link": "https://www.coventry.gov.uk/news/article/5556/mayor-announces-5-5m-to-bring-homeless-in-from-the-cold-this-christmas",
-    "date": "7 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 13:31"
+    "fetchedAt": "17 September 2026 at 14:07"
   }
 ]
