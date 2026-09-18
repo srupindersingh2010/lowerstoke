@@ -1,13 +1,33 @@
 [
   {
+    "title": "Record-breaking impact as Coventry’s visitor economy hits £1 billion",
+    "summary": "Coventry’s visitor economy has smashed through the £1 billion mark for the first time.",
+    "link": "https://www.coventry.gov.uk/news/article/5563/record-breaking-impact-as-coventry-s-visitor-economy-hits-1-billion",
+    "date": "18 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "18 September 2026 at 13:10"
+  },
+  {
+    "title": "City’s ‘outstanding’ work with children and young people recognised with visit by Ofsted Chief Inspector",
+    "summary": "Sir Martyn Oliver, His Majesty's Chief Inspector at the Office for Standards in Education, Children's Services and Skills, visited Coventry to learn more about the city’s work with children.",
+    "link": "https://www.coventry.gov.uk/news/article/5562/city-s-outstanding-work-with-children-and-young-people-recognised-with-visit-by-ofsted-chief-inspector",
+    "date": "17 September 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "18 September 2026 at 13:10"
+  },
+  {
     "title": "Ganesh Puja celebrated in Coventry",
     "summary": "Coventry’s Hindu community came together on Monday 14 September for Shree Ganesh Mahotsav 2026, a community celebration organised by Shree Varashidhi Vinayaka Friend’s Circle.",
     "link": "https://www.coventry.gov.uk/news/article/5561/ganesh-puja-celebrated-in-coventry",
     "date": "17 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 14:07"
+    "fetchedAt": "18 September 2026 at 13:10"
   },
   {
     "title": "Joint inspections on illegal Houses in Multiple Occupation (HMOs)",
@@ -17,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 14:07"
+    "fetchedAt": "18 September 2026 at 13:10"
   },
   {
     "title": "Heritage Open Days 2026",
@@ -27,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 14:07"
+    "fetchedAt": "18 September 2026 at 13:10"
   },
   {
     "title": "Help influence the future of Adult Social Care",
@@ -37,26 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 14:07"
-  },
-  {
-    "title": "Coventry shop ordered to close for persistently selling illegal products",
-    "summary": "We've closed down a shop in Coventry following reports of criminal activity.",
-    "link": "https://www.coventry.gov.uk/news/article/5557/coventry-shop-ordered-to-close-for-persistently-selling-illegal-products",
-    "date": "7 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 14:07"
-  },
-  {
-    "title": "Jobs, wellbeing support and community action events coming to Bell Green",
-    "summary": "Residents in Bell Green are invited to free activities for Wednesday 16 September to Friday 18 September.",
-    "link": "https://www.coventry.gov.uk/news/article/5555/jobs-wellbeing-support-and-community-action-events-coming-to-bell-green-",
-    "date": "7 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "17 September 2026 at 14:07"
+    "fetchedAt": "18 September 2026 at 13:10"
   }
 ]
