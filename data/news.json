@@ -1,13 +1,23 @@
 [
   {
+    "title": "Coventry partners come together to tackle child poverty",
+    "summary": "Every child deserves the chance to thrive. \nYet too many children and families in Coventry are facing the challenges of poverty, impacting their health, education and future opportunities.",
+    "link": "https://www.coventry.gov.uk/news/article/5564/coventry-partners-come-together-to-tackle-child-poverty",
+    "date": "22 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "22 September 2026 at 13:30"
+  },
+  {
     "title": "Record-breaking impact as Coventry’s visitor economy hits £1 billion",
     "summary": "Coventry’s visitor economy has smashed through the £1 billion mark for the first time.",
     "link": "https://www.coventry.gov.uk/news/article/5563/record-breaking-impact-as-coventry-s-visitor-economy-hits-1-billion",
     "date": "18 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 September 2026 at 15:55"
+    "fetchedAt": "22 September 2026 at 13:30"
   },
   {
     "title": "City’s ‘outstanding’ work with children and young people recognised with visit by Ofsted Chief Inspector",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 September 2026 at 15:55"
+    "fetchedAt": "22 September 2026 at 13:30"
   },
   {
     "title": "Ganesh Puja celebrated in Coventry",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 September 2026 at 15:55"
+    "fetchedAt": "22 September 2026 at 13:30"
   },
   {
     "title": "Joint inspections on illegal Houses in Multiple Occupation (HMOs)",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 September 2026 at 15:55"
+    "fetchedAt": "22 September 2026 at 13:30"
   },
   {
     "title": "Heritage Open Days 2026",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 September 2026 at 15:55"
-  },
-  {
-    "title": "Help influence the future of Adult Social Care",
-    "summary": "A new national commission is seeking to understand people’s views of Adult Social Care.",
-    "link": "https://www.coventry.gov.uk/news/article/5558/help-influence-the-future-of-adult-social-care",
-    "date": "10 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "21 September 2026 at 15:55"
+    "fetchedAt": "22 September 2026 at 13:30"
   }
 ]
