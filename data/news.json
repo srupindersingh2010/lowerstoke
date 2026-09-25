@@ -1,13 +1,23 @@
 [
   {
+    "title": "Thousands of homes benefit from energy efficiency works",
+    "summary": "More than 2,000 social houses in Coventry have benefited from energy efficiency improvements.",
+    "link": "https://www.coventry.gov.uk/news/article/5565/thousands-of-homes-benefit-from-energy-efficiency-works",
+    "date": "25 September 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "25 September 2026 at 13:41"
+  },
+  {
     "title": "Coventry partners come together to tackle child poverty",
     "summary": "Every child deserves the chance to thrive. \nYet too many children and families in Coventry are facing the challenges of poverty, impacting their health, education and future opportunities.",
     "link": "https://www.coventry.gov.uk/news/article/5564/coventry-partners-come-together-to-tackle-child-poverty",
     "date": "22 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "24 September 2026 at 14:20"
+    "fetchedAt": "25 September 2026 at 13:41"
   },
   {
     "title": "Record-breaking impact as Coventry’s visitor economy hits £1 billion",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "24 September 2026 at 14:20"
+    "fetchedAt": "25 September 2026 at 13:41"
   },
   {
     "title": "City’s ‘outstanding’ work with children and young people recognised with visit by Ofsted Chief Inspector",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "24 September 2026 at 14:20"
+    "fetchedAt": "25 September 2026 at 13:41"
   },
   {
     "title": "Ganesh Puja celebrated in Coventry",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "24 September 2026 at 14:20"
+    "fetchedAt": "25 September 2026 at 13:41"
   },
   {
     "title": "Joint inspections on illegal Houses in Multiple Occupation (HMOs)",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "24 September 2026 at 14:20"
-  },
-  {
-    "title": "Heritage Open Days 2026",
-    "summary": "Heritage Open Days are returning to Coventry, as the city's historical and cultural venues open their doors for people to visit - completely free of charge.",
-    "link": "https://www.coventry.gov.uk/news/article/5559/heritage-open-days-2026",
-    "date": "11 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "24 September 2026 at 14:20"
+    "fetchedAt": "25 September 2026 at 13:41"
   }
 ]
