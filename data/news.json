@@ -1,13 +1,23 @@
 [
   {
+    "title": "Preventing Ketamine drug use in Coventry",
+    "summary": "Ketamine use is rising across the country and in Coventry.",
+    "link": "https://www.coventry.gov.uk/news/article/5567/preventing-ketamine-drug-use-in-coventry",
+    "date": "2 October 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "2 October 2026 at 14:44"
+  },
+  {
     "title": "Coventry Market set for £1.25 million upgrade",
     "summary": "Coventry’s much-loved and Grade II listed indoor market is to benefit from external improvements after a commitment to invest at least £1.25 million.",
     "link": "https://www.coventry.gov.uk/news/article/5566/coventry-market-set-for-1-25-million-upgrade",
     "date": "29 September 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "1 October 2026 at 16:11"
+    "fetchedAt": "2 October 2026 at 14:44"
   },
   {
     "title": "Thousands of homes benefit from energy efficiency works",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "1 October 2026 at 16:11"
+    "fetchedAt": "2 October 2026 at 14:44"
   },
   {
     "title": "Coventry partners come together to tackle child poverty",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "1 October 2026 at 16:11"
+    "fetchedAt": "2 October 2026 at 14:44"
   },
   {
     "title": "Record-breaking impact as Coventry’s visitor economy hits £1 billion",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "1 October 2026 at 16:11"
+    "fetchedAt": "2 October 2026 at 14:44"
   },
   {
     "title": "City’s ‘outstanding’ work with children and young people recognised with visit by Ofsted Chief Inspector",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "1 October 2026 at 16:11"
-  },
-  {
-    "title": "Ganesh Puja celebrated in Coventry",
-    "summary": "Coventry’s Hindu community came together on Monday 14 September for Shree Ganesh Mahotsav 2026, a community celebration organised by Shree Varashidhi Vinayaka Friend’s Circle.",
-    "link": "https://www.coventry.gov.uk/news/article/5561/ganesh-puja-celebrated-in-coventry",
-    "date": "17 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "1 October 2026 at 16:11"
+    "fetchedAt": "2 October 2026 at 14:44"
   }
 ]
