@@ -6,7 +6,7 @@
     "actionDate": "14 Sep 2026",
     "source": "data.police.uk",
     "sourceUrl": "https://www.police.uk/pu/your-area/west-midlands-police/stoke-and-wyken/",
-    "fetchedAt": "2 October 2026 at 15:31"
+    "fetchedAt": "3 October 2026 at 13:23"
   },
   {
     "issue": "Recent increase in vehicle related offences, including a number of smash and grab offences and Theft of motor vehicles",
@@ -15,7 +15,7 @@
     "actionDate": "23 Sep 2026",
     "source": "data.police.uk",
     "sourceUrl": "https://www.police.uk/pu/your-area/west-midlands-police/stoke-and-wyken/",
-    "fetchedAt": "2 October 2026 at 15:31"
+    "fetchedAt": "3 October 2026 at 13:23"
   },
   {
     "issue": "Addressing community concerns about the illegal and antisocial use of off road bikes, quad bikes and e scooters, dangerous driving, thefts and the broader impact on public safety. Op Prosperity",
@@ -24,7 +24,7 @@
     "actionDate": "14 Sep 2026",
     "source": "data.police.uk",
     "sourceUrl": "https://www.police.uk/pu/your-area/west-midlands-police/stoke-and-wyken/",
-    "fetchedAt": "2 October 2026 at 15:31"
+    "fetchedAt": "3 October 2026 at 13:23"
   },
   {
     "issue": "During the summer months, parks and open spaces experience increased footfall, creating more opportunities for robberies, ASB and violence. Officers are focusing patrols in these areas to help keep the public safe.",
@@ -33,6 +33,15 @@
     "actionDate": "14 Sep 2026",
     "source": "data.police.uk",
     "sourceUrl": "https://www.police.uk/pu/your-area/west-midlands-police/stoke-and-wyken/",
-    "fetchedAt": "2 October 2026 at 15:31"
+    "fetchedAt": "3 October 2026 at 13:23"
+  },
+  {
+    "issue": "Working to ensure Halloween and Bonfire Night celebrations are enjoyed safely and responsibly",
+    "action": "Coventry Police are working with the local authority, key stakeholders and community members to help ensure these celebrations are enjoyed safely and responsibly. Neighbourhood officers will be out across the borough reassuring communities and preventing any behaviour that could put others at risk. We will be working with licenced premises to ensure that safe securing of fireworks and appropriate selling is taking place. Our Prevention Hub officers are working with schools to ensure that educational resources are delivered to schools to educate young people on the importance of staying safe across the period.",
+    "issueDate": "2 Oct 2026",
+    "actionDate": "2 Oct 2026",
+    "source": "data.police.uk",
+    "sourceUrl": "https://www.police.uk/pu/your-area/west-midlands-police/stoke-and-wyken/",
+    "fetchedAt": "3 October 2026 at 13:23"
   }
 ]
