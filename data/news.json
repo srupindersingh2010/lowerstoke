@@ -1,13 +1,23 @@
 [
   {
+    "title": "Coventry City Council supports Kinship Care Week 2026",
+    "summary": "Coventry City Council is proud to support Kinship Care Week.",
+    "link": "https://www.coventry.gov.uk/news/article/5568/coventry-city-council-supports-kinship-care-week-2026",
+    "date": "6 October 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "6 October 2026 at 15:04"
+  },
+  {
     "title": "Preventing Ketamine drug use in Coventry",
     "summary": "Ketamine use is rising across the country and in Coventry.",
     "link": "https://www.coventry.gov.uk/news/article/5567/preventing-ketamine-drug-use-in-coventry",
     "date": "2 October 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "5 October 2026 at 17:53"
+    "fetchedAt": "6 October 2026 at 15:04"
   },
   {
     "title": "Coventry Market set for £1.25 million upgrade",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "5 October 2026 at 17:53"
+    "fetchedAt": "6 October 2026 at 15:04"
   },
   {
     "title": "Thousands of homes benefit from energy efficiency works",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "5 October 2026 at 17:53"
+    "fetchedAt": "6 October 2026 at 15:04"
   },
   {
     "title": "Coventry partners come together to tackle child poverty",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "5 October 2026 at 17:53"
+    "fetchedAt": "6 October 2026 at 15:04"
   },
   {
     "title": "Record-breaking impact as Coventry’s visitor economy hits £1 billion",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "5 October 2026 at 17:53"
-  },
-  {
-    "title": "City’s ‘outstanding’ work with children and young people recognised with visit by Ofsted Chief Inspector",
-    "summary": "Sir Martyn Oliver, His Majesty's Chief Inspector at the Office for Standards in Education, Children's Services and Skills, visited Coventry to learn more about the city’s work with children.",
-    "link": "https://www.coventry.gov.uk/news/article/5562/city-s-outstanding-work-with-children-and-young-people-recognised-with-visit-by-ofsted-chief-inspector",
-    "date": "17 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "5 October 2026 at 17:53"
+    "fetchedAt": "6 October 2026 at 15:04"
   }
 ]
