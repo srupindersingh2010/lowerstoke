@@ -1,13 +1,33 @@
 [
   {
+    "title": "New Weapon surrender Bin",
+    "summary": "A new weapon surrender bin has been installed in Coventry as part of ongoing action to prevent and tackle knife crime and remove dangerous weapons from communities.",
+    "link": "https://www.coventry.gov.uk/news/article/5571/new-weapon-surrender-bin",
+    "date": "9 October 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "9 October 2026 at 15:16"
+  },
+  {
+    "title": "Council's digital programme wins national award for diversity and inclusion strategy",
+    "summary": "The Council's digital inclusion programme, #CovConnects, has won the Diversity and Inclusion Strategy of the Year award at the prestigious Women in Green Business Awards",
+    "link": "https://www.coventry.gov.uk/news/article/5570/council-s-digital-programme-wins-national-award-for-diversity-and-inclusion-strategy",
+    "date": "9 October 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "9 October 2026 at 15:16"
+  },
+  {
     "title": "Ask me what matters: care experienced young people tell professionals what they want to be asked",
     "summary": "A new initiative to ensure children in care and care leavers are asked about the things that really matter to them was launched today – with the help of Coventry City Council.",
     "link": "https://www.coventry.gov.uk/news/article/5569/ask-me-what-matters-care-experienced-young-people-tell-professionals-what-they-want-to-be-asked",
     "date": "7 October 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "8 October 2026 at 16:18"
+    "fetchedAt": "9 October 2026 at 15:16"
   },
   {
     "title": "Coventry City Council supports Kinship Care Week 2026",
@@ -17,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "8 October 2026 at 16:18"
+    "fetchedAt": "9 October 2026 at 15:16"
   },
   {
     "title": "Preventing Ketamine drug use in Coventry",
@@ -27,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "8 October 2026 at 16:18"
+    "fetchedAt": "9 October 2026 at 15:16"
   },
   {
     "title": "Coventry Market set for £1.25 million upgrade",
@@ -37,26 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "8 October 2026 at 16:18"
-  },
-  {
-    "title": "Thousands of homes benefit from energy efficiency works",
-    "summary": "More than 2,000 social houses in Coventry have benefited from energy efficiency improvements.",
-    "link": "https://www.coventry.gov.uk/news/article/5565/thousands-of-homes-benefit-from-energy-efficiency-works",
-    "date": "25 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "8 October 2026 at 16:18"
-  },
-  {
-    "title": "Coventry partners come together to tackle child poverty",
-    "summary": "Every child deserves the chance to thrive. \nYet too many children and families in Coventry are facing the challenges of poverty, impacting their health, education and future opportunities.",
-    "link": "https://www.coventry.gov.uk/news/article/5564/coventry-partners-come-together-to-tackle-child-poverty",
-    "date": "22 September 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "8 October 2026 at 16:18"
+    "fetchedAt": "9 October 2026 at 15:16"
   }
 ]
