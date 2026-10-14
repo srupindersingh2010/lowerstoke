@@ -1,13 +1,23 @@
 [
   {
+    "title": "City Centre South reaches major milestone as first building begins to rise",
+    "summary": "A major milestone has been reached at Coventry's transformational City Centre South regeneration project.",
+    "link": "https://www.coventry.gov.uk/news/article/5574/city-centre-south-reaches-major-milestone-as-first-building-begins-to-rise",
+    "date": "14 October 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "14 October 2026 at 13:47"
+  },
+  {
     "title": "Thank you to our fostering families’ amazing children",
     "summary": "Coventry is this week paying tribute and saying thank-you to the children of foster families.",
     "link": "https://www.coventry.gov.uk/news/article/5573/thank-you-to-our-fostering-families-amazing-children",
     "date": "13 October 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 October 2026 at 16:39"
+    "fetchedAt": "14 October 2026 at 13:47"
   },
   {
     "title": "Black History Month events set to begin this week",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 October 2026 at 16:39"
+    "fetchedAt": "14 October 2026 at 13:47"
   },
   {
     "title": "New Weapon surrender Bin",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 October 2026 at 16:39"
+    "fetchedAt": "14 October 2026 at 13:47"
   },
   {
     "title": "Council's digital programme wins national award for diversity and inclusion strategy",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 October 2026 at 16:39"
+    "fetchedAt": "14 October 2026 at 13:47"
   },
   {
     "title": "Ask me what matters: care experienced young people tell professionals what they want to be asked",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 October 2026 at 16:39"
-  },
-  {
-    "title": "Coventry City Council supports Kinship Care Week 2026",
-    "summary": "Coventry City Council is proud to support Kinship Care Week.",
-    "link": "https://www.coventry.gov.uk/news/article/5568/coventry-city-council-supports-kinship-care-week-2026",
-    "date": "6 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "13 October 2026 at 16:39"
+    "fetchedAt": "14 October 2026 at 13:47"
   }
 ]
