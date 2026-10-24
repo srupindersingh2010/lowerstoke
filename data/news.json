@@ -1,13 +1,33 @@
 [
   {
-    "title": "Council uses new Renters’ Rights Act powers to protect private tenants",
-    "summary": "The Council has used new enforcement powers available, following the introduction of the Renters’ Rights Act 2025, to take action against landlords for breaches of tenancy law.",
-    "link": "https://www.coventry.gov.uk/news/article/5578/council-uses-new-renters-rights-act-powers-to-protect-private-tenants",
+    "title": "Fun for the Whole Family at Coventry Libraries' FREE Big Book Bash!",
+    "summary": "Get ready for a day packed with stories, creativity and fun! Coventry Libraries is bringing its FREE Big Book Bash to Coventry Transport Museum on Wednesday 28 October, from 10am to 3.30pm",
+    "link": "https://www.coventry.gov.uk/news/article/5580/fun-for-the-whole-family-at-coventry-libraries-free-big-book-bash-",
     "date": "23 October 2026",
     "focused": true,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 October 2026 at 14:09"
+    "fetchedAt": "24 October 2026 at 12:55"
+  },
+  {
+    "title": "Learn how to do business with Coventry City Council",
+    "summary": "Local businesses can find out more about working with Coventry City Council through a new series of free webinars.",
+    "link": "https://www.coventry.gov.uk/news/article/5579/learn-how-to-do-business-with-coventry-city-council",
+    "date": "23 October 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "24 October 2026 at 12:55"
+  },
+  {
+    "title": "Council uses new Renters’ Rights Act powers to protect private tenants",
+    "summary": "The Council has used new enforcement powers available, following the introduction of the Renters’ Rights Act 2025, to take action against landlords for breaches of tenancy law.",
+    "link": "https://www.coventry.gov.uk/news/article/5578/council-uses-new-renters-rights-act-powers-to-protect-private-tenants",
+    "date": "23 October 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "24 October 2026 at 12:55"
   },
   {
     "title": "Reaching out to unpaid carers",
@@ -17,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 October 2026 at 14:09"
+    "fetchedAt": "24 October 2026 at 12:55"
   },
   {
     "title": "Coventry Good Citizen Award honours community champions",
@@ -27,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 October 2026 at 14:09"
+    "fetchedAt": "24 October 2026 at 12:55"
   },
   {
     "title": "CVLR takes second major award",
@@ -37,26 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 October 2026 at 14:09"
-  },
-  {
-    "title": "City Centre South reaches major milestone as first building begins to rise",
-    "summary": "A major milestone has been reached at Coventry's transformational City Centre South regeneration project.",
-    "link": "https://www.coventry.gov.uk/news/article/5574/city-centre-south-reaches-major-milestone-as-first-building-begins-to-rise",
-    "date": "14 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 October 2026 at 14:09"
-  },
-  {
-    "title": "Thank you to our fostering families’ amazing children",
-    "summary": "Coventry is this week paying tribute and saying thank-you to the children of foster families.",
-    "link": "https://www.coventry.gov.uk/news/article/5573/thank-you-to-our-fostering-families-amazing-children",
-    "date": "13 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 October 2026 at 14:09"
+    "fetchedAt": "24 October 2026 at 12:55"
   }
 ]
