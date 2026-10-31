@@ -1,13 +1,23 @@
 [
   {
+    "title": "Coventry Peace Festival returns to celebrate peace and unity",
+    "summary": "Taking place from 2 to 14 November, the Coventry Peace Festival returns with a programme of free events and activities celebrating peace and unity for residents of all ages.",
+    "link": "https://www.coventry.gov.uk/news/article/5583/coventry-peace-festival-returns-to-celebrate-peace-and-unity",
+    "date": "30 October 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "31 October 2026 at 01:12"
+  },
+  {
     "title": "Coventry under the spotlight at Rough Sleepers Summit",
     "summary": "The work to tackle rough sleeping in Coventry has been highlighted at a national - and first ever - Rough Sleepers Summit held in Downing Street yesterday.",
     "link": "https://www.coventry.gov.uk/news/article/5582/coventry-under-the-spotlight-at-rough-sleepers-summit",
     "date": "27 October 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "30 October 2026 at 15:53"
+    "fetchedAt": "31 October 2026 at 01:12"
   },
   {
     "title": "Coventry Celebrates National Baby Week",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "30 October 2026 at 15:53"
+    "fetchedAt": "31 October 2026 at 01:12"
   },
   {
     "title": "Fun for the Whole Family at Coventry Libraries' FREE Big Book Bash!",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "30 October 2026 at 15:53"
+    "fetchedAt": "31 October 2026 at 01:12"
   },
   {
     "title": "Learn how to do business with Coventry City Council",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "30 October 2026 at 15:53"
+    "fetchedAt": "31 October 2026 at 01:12"
   },
   {
     "title": "Council uses new Renters’ Rights Act powers to protect private tenants",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "30 October 2026 at 15:53"
-  },
-  {
-    "title": "Reaching out to unpaid carers",
-    "summary": "Coventry City Council is supporting a major national pilot survey to gather the experiences of unpaid carers.",
-    "link": "https://www.coventry.gov.uk/news/article/5577/reaching-out-to-unpaid-carers",
-    "date": "21 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "30 October 2026 at 15:53"
+    "fetchedAt": "31 October 2026 at 01:12"
   }
 ]
