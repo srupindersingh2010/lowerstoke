@@ -1073,199 +1073,287 @@ def write_metadata():
 # =============================================================================
 # MAIN
 # =============================================================================
+# =============================================================================
+# COUNCIL & WMCA MEETINGS (ModernGov calendars)
+# Robust version (Oct 2026):
+#   * fetches current month AND the true next month (old code skipped a month
+#     when run near the end of a month, e.g. 30 Oct + 32 days = 1 Dec)
+#   * tries plain HTTP first, then the headless browser
+#   * tries several ModernGov calendar pages / domains
+#   * reads the meeting date from the link itself ("... on 20/10 at 2.00 pm")
+#     so small layout changes to the date headings no longer break it
+#   * if nothing can be read, keeps the previous still-upcoming meetings
+#     instead of wiping the table, and saves a debug copy of the page
+# =============================================================================
+
+_MONTHS = {m: i for i, m in enumerate(
+    ["january", "february", "march", "april", "may", "june", "july",
+     "august", "september", "october", "november", "december"], 1)}
+
+_DATE_HEADING_RE = re.compile(
+    r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)?,?\s*"
+    r"(\d{1,2})(?:st|nd|rd|th)?\s+"
+    r"(January|February|March|April|May|June|July|August|September|October|November|December),?\s+"
+    r"(\d{4})", re.I)
+_TIME_RE = re.compile(
+    r"(\d{1,2}[.:]\d{2}\s*[ap]\.?m\.?(?:\s*-\s*\d{1,2}[.:]\d{2}\s*[ap]\.?m\.?)?)", re.I)
+
+
+def _mg_months():
+    """(year, month) for this month and the next month."""
+    y, m = NOW_UTC.year, NOW_UTC.month
+    ny, nm = (y + 1, 1) if m == 12 else (y, m + 1)
+    return [(y, m), (ny, nm)]
+
+
+def _mg_fetch(url):
+    """Plain HTTP first (fast), then headless browser. Returns HTML or ''."""
+    r = safe_get(url)
+    if r is not None and r.status_code == 200 and "ieListDocuments" in r.text:
+        return r.text
+    html = browser_get(url)
+    if html and len(html) > 500:
+        return html
+    if r is not None and r.status_code == 200 and len(r.text) > 500:
+        return r.text
+    return ""
+
+
+def _mg_parse(html, base_url, page_year, page_month, source_url):
+    """Return list of meeting dicts found on one ModernGov calendar page."""
+    soup  = BeautifulSoup(html, "html.parser")
+    found = []
+    for a in soup.find_all("a", href=re.compile(r"ieListDocuments", re.I)):
+        href      = a.get("href", "")
+        link_text = a.get_text(" ", strip=True)
+        title_att = a.get("title", "") or ""
+        li        = a.find_parent(["li", "tr", "td", "div", "p"]) or a.parent
+        ctx_text  = li.get_text(" ", strip=True) if li else link_text
+
+        # ---- date ----
+        mdate = None
+        dm = re.search(r"\bon\s+(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?", link_text + " " + title_att)
+        if dm:
+            d, mo = int(dm.group(1)), int(dm.group(2))
+            yr = int(dm.group(3)) if dm.group(3) else page_year
+            if yr < 100:
+                yr += 2000
+            if not dm.group(3):
+                if page_month == 12 and mo == 1:
+                    yr += 1
+                elif page_month == 1 and mo == 12:
+                    yr -= 1
+            try:
+                mdate = dt_date(yr, mo, d)
+            except ValueError:
+                mdate = None
+        if mdate is None:
+            # nearest date heading before the link (any reasonable format)
+            for prev in a.find_all_previous(string=_DATE_HEADING_RE, limit=1):
+                hm = _DATE_HEADING_RE.search(prev)
+                try:
+                    mdate = dt_date(int(hm.group(4)), _MONTHS[hm.group(3).lower()], int(hm.group(2)))
+                except (ValueError, KeyError):
+                    mdate = None
+        if mdate is None:
+            hm = _DATE_HEADING_RE.search(ctx_text)
+            if hm:
+                try:
+                    mdate = dt_date(int(hm.group(4)), _MONTHS[hm.group(3).lower()], int(hm.group(2)))
+                except (ValueError, KeyError):
+                    pass
+        if mdate is None:
+            continue
+
+        # ---- time ----
+        tm = _TIME_RE.search(link_text) or _TIME_RE.search(title_att) or _TIME_RE.search(ctx_text)
+        time_str = re.sub(r"\s+", " ", tm.group(1)).strip() if tm else ""
+
+        # ---- title ----
+        title = link_text or title_att
+        title = re.sub(r"^PROVISIONAL\s*-\s*", "", title, flags=re.I)
+        title = re.sub(r"^Meeting of\s*", "", title, flags=re.I)
+        title = re.sub(r",?\s*\d{1,2}(?:st|nd|rd|th)?\s+\w+\s+\d{4}.*$", "", title)
+        title = re.sub(r"\s*\bon\s+\d{1,2}/\d{1,2}.*$", "", title).strip(" -,")
+        if not title:
+            continue
+
+        # ---- location: text after the link in the same item ----
+        location = ""
+        if li and link_text and link_text in ctx_text:
+            after = ctx_text.split(link_text, 1)[1].strip(" -–,")
+            if len(after) >= 5:
+                location = after
+        if not location:
+            lm = re.search(r"-\s+([^-]{5,})$", ctx_text)
+            if lm and link_text not in lm.group(1):
+                location = lm.group(1).strip()
+
+        location = _TIME_RE.sub("", location).strip(" -–,")
+        if len(location) < 5:
+            location = ""
+
+        if href.startswith("http"):
+            agenda_url = href
+        elif href.startswith("/"):
+            agenda_url = f"{base_url}{href}"
+        else:
+            agenda_url = f"{base_url}/{href}"
+        mid_m = re.search(r"MId=(\d+)", href, re.I)
+
+        found.append({
+            "_date": mdate, "time": time_str, "title": title, "location": location,
+            "agendaUrl": agenda_url, "mid": mid_m.group(1) if mid_m else "",
+            "sourceUrl": source_url,
+        })
+    return found
+
+
+def _mg_scrape(label, base_urls, default_location, debug_name):
+    """Collect next-30-day meetings from the first ModernGov site that works."""
+    today  = NOW_UTC.date()
+    cutoff = today + timedelta(days=30)
+    for base_url in base_urls:
+        meetings, seen, pages_ok, last_html = [], set(), 0, ""
+        for (yr, mo) in _mg_months():
+            urls = [
+                f"{base_url}/mgCalendarAgendaView.aspx?RPID=0&M={mo}&DD={yr}&CID=0&OT=&C=-1&MR=1",
+                f"{base_url}/mgCalendarMonthView.aspx?M={mo}&DD={yr}&CID=0&OT=&C=-1&MR=0&GL=1",
+            ]
+            for url in urls:
+                html = _mg_fetch(url)
+                if not html:
+                    print(f"  {label}: could not fetch {url}")
+                    continue
+                pages_ok += 1
+                last_html = html
+                items = _mg_parse(html, base_url, yr, mo, url)
+                print(f"  {label}: {len(items)} meeting links on {mo}/{yr} ({url.split('/')[-1][:24]}…)")
+                for it in items:
+                    if it["_date"] < today or it["_date"] > cutoff:
+                        continue
+                    key = it["mid"] or f"{it['_date']}{it['title']}"
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    it["location"] = it["location"] or default_location
+                    meetings.append(it)
+                if items:
+                    break  # this page type worked for this month; skip the fallback page
+        if meetings:
+            meetings.sort(key=lambda m: (m["_date"], m["time"]))
+            print(f"  {label}: {len(meetings)} meetings in next 30 days from {base_url}")
+            return meetings
+        if pages_ok and last_html:
+            try:
+                dbg = DATA_DIR / "debug"
+                dbg.mkdir(exist_ok=True)
+                (dbg / f"{debug_name}.html").write_text(last_html, encoding="utf-8")
+                print(f"  {label}: pages loaded but no meetings parsed — saved data/debug/{debug_name}.html")
+                print("  Page text sample: " + BeautifulSoup(last_html, "html.parser").get_text(" ", strip=True)[:600])
+            except Exception as e:
+                print(f"  could not save debug page: {e}")
+    return []
+
+
+def _mg_keep_previous(filename, label):
+    """Fallback: keep previously saved meetings that are still upcoming."""
+    try:
+        old = json.loads((DATA_DIR / filename).read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    today, week = NOW_UTC.date(), NOW_UTC.date() + timedelta(days=7)
+    kept = []
+    for m in old:
+        try:
+            d = datetime.strptime(m["date"], "%d %B %Y").date()
+        except Exception:
+            continue
+        if d >= today:
+            m["withinWeek"] = d <= week
+            kept.append(m)
+    print(f"  {label}: keeping {len(kept)} previously saved upcoming meetings")
+    return kept
+
+
 def scrape_council_meetings():
-    """Scrape council meetings for next 30 days; check attendance for next 7 days."""
+    """Coventry City Council meetings for next 30 days; attendance for next 7 days."""
     print("\n-- Council Meetings (next 30 days) --")
     BASE_URL  = "https://edemocracy.coventry.gov.uk"
     OUR_CLLRS = ["mcnicholas", "rupinder singh", "shahnaz akhter"]
-    meetings  = []
-    seen      = set()
+    week_cutoff = NOW_UTC.date() + timedelta(days=7)
 
-    for offset in range(2):
-        dt   = NOW_UTC + timedelta(days=offset * 32)
-        url  = (f"{BASE_URL}/mgCalendarAgendaView.aspx"
-                f"?RPID=0&M={dt.month}&DD={dt.year}&CID=0&OT=&C=-1&MR=1")
-        html = browser_get(url)
-        if not html or len(html) < 500:
-            print(f"  Could not fetch month {dt.month}/{dt.year}")
-            continue
-        print(f"  Month {dt.month}/{dt.year}: {len(html)} chars")
+    found = _mg_scrape("Coventry", [BASE_URL], "Council House, Coventry", "coventry_calendar")
+    if not found:
+        write_json("council_meetings.json", _mg_keep_previous("council_meetings.json", "Coventry"))
+        return
 
-        soup        = BeautifulSoup(html, "html.parser")
-        cutoff      = NOW_UTC.date() + timedelta(days=30)
-        week_cutoff = NOW_UTC.date() + timedelta(days=7)
-
-        # Walk all elements in order: <p> tags contain date headers,
-        # <li> tags with ieListDocuments links contain meetings
-        current_date = None
-        current_day  = None
-        for elem in soup.find_all(True):
-            if elem.name == "p":
-                date_m = re.match(
-                    r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday),\s+"
-                    r"(\d{1,2})(?:st|nd|rd|th)\s+(\w+),\s+(\d{4})",
-                    elem.get_text(strip=True))
-                if date_m:
-                    try:
-                        current_date = datetime.strptime(
-                            f"{date_m.group(2)} {date_m.group(3)} {date_m.group(4)}",
-                            "%d %B %Y").date()
-                        current_day = date_m.group(1)
-                    except ValueError:
-                        current_date = None
-            elif elem.name == "li" and current_date:
-                a = elem.find("a", href=re.compile(r"ieListDocuments"))
-                if not a:
-                    continue
-                if current_date < NOW_UTC.date() or current_date > cutoff:
-                    continue
-                li_text    = elem.get_text(" ", strip=True)
-                href       = a["href"]
-                link_text  = a.get_text(strip=True)
-                time_m     = re.match(
-                    r"(\d{1,2}\.\d{2}\s*(?:am|pm)(?:\s*-\s*\d{1,2}\.\d{2}\s*(?:am|pm))?)",
-                    li_text)
-                time_str   = time_m.group(1).strip() if time_m else ""
-                title      = re.sub(r"\s+on\s+\d{2}/\d{2}.*$", "", link_text).strip()
-                loc_m      = re.search(
-                    r"-\s+((?:Committee Room|Council Chamber|Diamond Room|Council House)[^-\n]+?)$",
-                    li_text)
-                location   = loc_m.group(1).strip() if loc_m else "Council House, Coventry"
-                if href.startswith("http"):
-                    agenda_url = href
-                elif href.startswith("/"):
-                    agenda_url = f"{BASE_URL}{href}"
-                else:
-                    agenda_url = f"{BASE_URL}/{href}"
-                mid_m      = re.search(r"MId=(\d+)", href)
-                attend_url = (f"{BASE_URL}/mgMeetingAttendance.aspx?ID={mid_m.group(1)}"
-                              if mid_m else "")
-                key = f"{current_date}{title}"
-                if key in seen:
-                    continue
-                seen.add(key)
-
-                our_cllrs_attending = []
-                attendance_checked  = False
-                if attend_url and current_date <= week_cutoff:
-                    ra = safe_get(attend_url)
-                    if ra and ra.status_code == 200:
-                        attendance_checked = True
-                        asoup = BeautifulSoup(ra.text, "html.parser")
-                        for row in asoup.find_all("tr"):
-                            cells = row.find_all("td")
-                            if len(cells) < 3:
-                                continue
-                            name   = cells[0].get_text(strip=True).lower()
-                            status = cells[2].get_text(strip=True).lower()
-                            for cllr in OUR_CLLRS:
-                                if cllr in name and status in ("expected", "present"):
-                                    display = re.sub(
-                                        r"^Councillor\s+", "",
-                                        cells[0].get_text(strip=True))
-                                    if display not in our_cllrs_attending:
-                                        our_cllrs_attending.append(display)
-                    print(f"  Attendance {current_date} {title[:30]}: {our_cllrs_attending or 'none'}")
-
-                meetings.append({
-                    "date":              current_date.strftime("%-d %B %Y"),
-                    "dayOfWeek":         current_day,
-                    "time":              time_str,
-                    "title":             title,
-                    "location":          location,
-                    "agendaUrl":         agenda_url,
-                    "attendanceUrl":     attend_url,
-                    "withinWeek":        current_date <= week_cutoff,
-                    "attendanceChecked": attendance_checked,
-                    "ourCouncillors":    our_cllrs_attending,
-                    "sourceUrl":         url,
-                    "fetchedAt":         STAMP,
-                })
-                print(f"  Added: {current_date} {time_str} — {title[:50]}")
-
+    meetings = []
+    for it in found:
+        d = it["_date"]
+        attend_url = f"{BASE_URL}/mgMeetingAttendance.aspx?ID={it['mid']}" if it["mid"] else ""
+        ours, checked = [], False
+        if attend_url and d <= week_cutoff:
+            html = ""
+            ra = safe_get(attend_url)
+            if ra is not None and ra.status_code == 200:
+                html = ra.text
+            else:
+                html = browser_get(attend_url)
+            if html:
+                checked = True
+                asoup = BeautifulSoup(html, "html.parser")
+                for row in asoup.find_all("tr"):
+                    cells = row.find_all("td")
+                    if len(cells) < 3:
+                        continue
+                    name   = cells[0].get_text(" ", strip=True)
+                    status = cells[2].get_text(strip=True).lower()
+                    for cllr in OUR_CLLRS:
+                        if cllr in name.lower() and status in ("expected", "present"):
+                            disp = re.sub(r"^Councillor\s+", "", name)
+                            if disp not in ours:
+                                ours.append(disp)
+            print(f"  Attendance {d} {it['title'][:30]}: {ours or 'none'}")
+        meetings.append({
+            "date":              d.strftime("%-d %B %Y"),
+            "dayOfWeek":         d.strftime("%A"),
+            "time":              it["time"],
+            "title":             it["title"],
+            "location":          it["location"],
+            "agendaUrl":         it["agendaUrl"],
+            "attendanceUrl":     attend_url,
+            "withinWeek":        d <= week_cutoff,
+            "attendanceChecked": checked,
+            "ourCouncillors":    ours,
+            "sourceUrl":         it["sourceUrl"],
+            "fetchedAt":         STAMP,
+        })
     print(f"  Total meetings: {len(meetings)}")
     write_json("council_meetings.json", meetings)
 
 
 def scrape_wmca_meetings():
-    """Scrape WMCA meetings for next 30 days from wmca.moderngov.co.uk."""
+    """WMCA meetings for next 30 days (governance.wmca.org.uk, old domain as fallback)."""
     print("\n-- WMCA Meetings (next 30 days) --")
-    BASE_URL  = "https://wmca.moderngov.co.uk"
-    meetings  = []
-    seen      = set()
-
-    for offset in range(2):
-        dt   = NOW_UTC + timedelta(days=offset * 32)
-        url  = (f"{BASE_URL}/mgCalendarAgendaView.aspx"
-                f"?RPID=0&M={dt.month}&DD={dt.year}&CID=0&OT=&C=-1&MR=1")
-        html = browser_get(url)
-        if not html or len(html) < 500:
-            print(f"  Could not fetch WMCA month {dt.month}/{dt.year}")
-            continue
-        print(f"  WMCA Month {dt.month}/{dt.year}: {len(html)} chars")
-
-        soup        = BeautifulSoup(html, "html.parser")
-        cutoff      = NOW_UTC.date() + timedelta(days=30)
-        week_cutoff = NOW_UTC.date() + timedelta(days=7)
-        current_date = None
-        current_day  = None
-
-        for elem in soup.find_all(True):
-            if elem.name == "p":
-                txt = elem.get_text(strip=True)
-                # WMCA format: "Monday 22nd June 2026" (no commas)
-                date_m = re.match(
-                    r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s+"
-                    r"(\d{1,2})(?:st|nd|rd|th)\s+(\w+)\s+(\d{4})", txt)
-                if date_m:
-                    try:
-                        current_date = datetime.strptime(
-                            f"{date_m.group(2)} {date_m.group(3)} {date_m.group(4)}",
-                            "%d %B %Y").date()
-                        current_day = date_m.group(1)
-                    except ValueError:
-                        current_date = None
-            elif elem.name == "li" and current_date:
-                a = elem.find("a", href=re.compile(r"ieListDocuments"))
-                if not a:
-                    continue
-                if current_date < NOW_UTC.date() or current_date > cutoff:
-                    continue
-                li_text    = elem.get_text(" ", strip=True)
-                href       = a["href"]
-                link_text  = a.get_text(strip=True)
-                link_text  = re.sub(r"^PROVISIONAL\s*-\s*", "", link_text).strip()
-                time_m     = re.match(
-                    r"(\d{1,2}\.\d{2}\s*(?:am|pm)(?:\s*-\s*\d{1,2}\.\d{2}\s*(?:am|pm))?)",
-                    li_text)
-                time_str   = time_m.group(1).strip() if time_m else ""
-                title      = re.sub(r"\s+on\s+\d{2}/\d{2}.*$", "", link_text).strip()
-                loc_m      = re.search(r"-\s+([^-]{10,})$", li_text)
-                location   = loc_m.group(1).strip() if loc_m else "16 Summer Lane, Birmingham"
-                # Always build absolute URL using BASE_URL
-                if href.startswith("http"):
-                    agenda_url = href
-                elif href.startswith("/"):
-                    agenda_url = f"{BASE_URL}{href}"
-                else:
-                    agenda_url = f"{BASE_URL}/{href}"
-                key = f"{current_date}{title}"
-                if key in seen:
-                    continue
-                seen.add(key)
-                meetings.append({
-                    "date":       current_date.strftime("%-d %B %Y"),
-                    "dayOfWeek":  current_day,
-                    "time":       time_str,
-                    "title":      title,
-                    "location":   location,
-                    "agendaUrl":  agenda_url,
-                    "withinWeek": current_date <= week_cutoff,
-                    "sourceUrl":  url,
-                    "fetchedAt":  STAMP,
-                })
-                print(f"  Added: {current_date} {time_str} — {title[:50]}")
-
+    week_cutoff = NOW_UTC.date() + timedelta(days=7)
+    found = _mg_scrape("WMCA",
+                       ["https://governance.wmca.org.uk", "https://wmca.moderngov.co.uk"],
+                       "WMCA, 16 Summer Lane, Birmingham", "wmca_calendar")
+    if not found:
+        write_json("wmca_meetings.json", _mg_keep_previous("wmca_meetings.json", "WMCA"))
+        return
+    meetings = [{
+        "date":       it["_date"].strftime("%-d %B %Y"),
+        "dayOfWeek":  it["_date"].strftime("%A"),
+        "time":       it["time"],
+        "title":      it["title"],
+        "location":   it["location"],
+        "agendaUrl":  it["agendaUrl"],
+        "withinWeek": it["_date"] <= week_cutoff,
+        "sourceUrl":  it["sourceUrl"],
+        "fetchedAt":  STAMP,
+    } for it in found]
     print(f"  Total WMCA meetings: {len(meetings)}")
     write_json("wmca_meetings.json", meetings)
 
