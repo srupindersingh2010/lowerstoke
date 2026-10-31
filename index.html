@@ -962,7 +962,7 @@
     stamp('ts-meetings', data.length ? data[0].fetchedAt : '');
     if (!data.length) {
       document.getElementById('meetings-box').innerHTML =
-        '<tr><td colspan="5" style="text-align:center;color:#777;">No meetings scheduled in the next 30 days. ' +
+        '<tr><td colspan="5" style="text-align:center;color:#777;">No upcoming meetings found for the next 30 days. ' +
         '<a href="https://edemocracy.coventry.gov.uk/mgCalendarMonthView.aspx?GL=1" target="_blank" style="color:var(--labour-red);">Check full calendar →</a></td></tr>';
       return;
     }
@@ -998,7 +998,7 @@
     stamp('ts-wmca', data.length ? data[0].fetchedAt : '');
     if (!data.length) {
       document.getElementById('wmca-box').innerHTML =
-        '<tr><td colspan="5" style="text-align:center;color:#777;">No WMCA meetings scheduled in the next 30 days. ' +
+        '<tr><td colspan="5" style="text-align:center;color:#777;">No upcoming WMCA meetings found for the next 30 days. ' +
         '<a href="https://governance.wmca.org.uk/mgCalendarMonthView.aspx?GL=1&bcr=1" target="_blank" style="color:var(--labour-red);">Check full WMCA calendar →</a></td></tr>';
       return;
     }
