@@ -1,13 +1,43 @@
 [
   {
+    "title": "Preparing for adulthood transition event.",
+    "summary": "If you are someone who is heading into adulthood, finishing school or college or even finishing education entirely and you have a care need, we want you to know there is support available.",
+    "link": "https://www.coventry.gov.uk/news/article/5586/preparing-for-adulthood-transition-event-",
+    "date": "5 November 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "5 November 2026 at 16:18"
+  },
+  {
+    "title": "Students move into new Woodfield Academy home following major redevelopment",
+    "summary": "All pupils at Woodfield Academy have officially moved into their new home on the former grounds of Woodlands Academy following a major redevelopment and construction works.",
+    "link": "https://www.coventry.gov.uk/news/article/5587/students-move-into-new-woodfield-academy-home-following-major-redevelopment",
+    "date": "4 November 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "5 November 2026 at 16:18"
+  },
+  {
+    "title": "Coventry remembers",
+    "summary": "As November begins, communities across Coventry pause to remember those who gave their lives in conflict and reflect on the impact these events have had on our city.",
+    "link": "https://www.coventry.gov.uk/news/article/5588/coventry-remembers",
+    "date": "4 November 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "5 November 2026 at 16:18"
+  },
+  {
     "title": "Families Portal – help and advice at your fingertips",
     "summary": "Families from across Coventry have been learning about the help and support available at the touch of a button.",
     "link": "https://www.coventry.gov.uk/news/article/5585/families-portal-help-and-advice-at-your-fingertips",
     "date": "3 November 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "4 November 2026 at 16:59"
+    "fetchedAt": "5 November 2026 at 16:18"
   },
   {
     "title": "Thousands of Coventry children and young people share their views through One Big Voice survey",
@@ -17,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "4 November 2026 at 16:59"
+    "fetchedAt": "5 November 2026 at 16:18"
   },
   {
     "title": "Coventry Peace Festival returns to celebrate peace and unity",
@@ -27,36 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "4 November 2026 at 16:59"
-  },
-  {
-    "title": "Coventry under the spotlight at Rough Sleepers Summit",
-    "summary": "The work to tackle rough sleeping in Coventry has been highlighted at a national - and first ever - Rough Sleepers Summit held in Downing Street yesterday.",
-    "link": "https://www.coventry.gov.uk/news/article/5582/coventry-under-the-spotlight-at-rough-sleepers-summit",
-    "date": "27 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "4 November 2026 at 16:59"
-  },
-  {
-    "title": "Coventry Celebrates National Baby Week",
-    "summary": "Families across Coventry are invited to join the celebrations for National Baby Week 2026, taking place from 14-20 November.",
-    "link": "https://www.coventry.gov.uk/news/article/5581/coventry-celebrates-national-baby-week",
-    "date": "27 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "4 November 2026 at 16:59"
-  },
-  {
-    "title": "Fun for the Whole Family at Coventry Libraries' FREE Big Book Bash!",
-    "summary": "Get ready for a day packed with stories, creativity and fun! Coventry Libraries is bringing its FREE Big Book Bash to Coventry Transport Museum on Wednesday 28 October, from 10am to 3.30pm",
-    "link": "https://www.coventry.gov.uk/news/article/5580/fun-for-the-whole-family-at-coventry-libraries-free-big-book-bash-",
-    "date": "23 October 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "4 November 2026 at 16:59"
+    "fetchedAt": "5 November 2026 at 16:18"
   }
 ]
