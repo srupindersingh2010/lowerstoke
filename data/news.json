@@ -1,13 +1,33 @@
 [
   {
+    "title": "New roving camera to help tackle fly-tipping",
+    "summary": "The Council has introduced a new roving CCTV camera to help further tackle fly-tipping across the city.",
+    "link": "https://www.coventry.gov.uk/news/article/5591/new-roving-camera-to-help-tackle-fly-tipping",
+    "date": "11 November 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "11 November 2026 at 16:00"
+  },
+  {
+    "title": "Available MenB vaccines for young people",
+    "summary": "Local pharmacies are playing an important role in helping protect residents as part of a vaccination programme across the city.",
+    "link": "https://www.coventry.gov.uk/news/article/5590/available-menb-vaccines-for-young-people",
+    "date": "11 November 2026",
+    "focused": false,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "11 November 2026 at 16:00"
+  },
+  {
     "title": "Big Wheel and Christmas Market bringing festive atmosphere to city centre",
     "summary": "The towering, big wheel and a cosy Christmas market will return to Broadgate next week, bringing a magical festive atmosphere to the city centre.",
     "link": "https://www.coventry.gov.uk/news/article/5589/big-wheel-and-christmas-market-bringing-festive-atmosphere-to-city-centre",
     "date": "6 November 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 November 2026 at 17:11"
+    "fetchedAt": "11 November 2026 at 16:00"
   },
   {
     "title": "Preparing for adulthood transition event.",
@@ -17,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 November 2026 at 17:11"
+    "fetchedAt": "11 November 2026 at 16:00"
   },
   {
     "title": "Students move into new Woodfield Academy home following major redevelopment",
@@ -27,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 November 2026 at 17:11"
+    "fetchedAt": "11 November 2026 at 16:00"
   },
   {
     "title": "Coventry remembers",
@@ -37,26 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 November 2026 at 17:11"
-  },
-  {
-    "title": "Families Portal – help and advice at your fingertips",
-    "summary": "Families from across Coventry have been learning about the help and support available at the touch of a button.",
-    "link": "https://www.coventry.gov.uk/news/article/5585/families-portal-help-and-advice-at-your-fingertips",
-    "date": "3 November 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 November 2026 at 17:11"
-  },
-  {
-    "title": "Thousands of Coventry children and young people share their views through One Big Voice survey",
-    "summary": "More than 6,000 children and young people from 60 schools have taken part in the latest Coventry One Big Voice survey, sharing their views and experiences of living and growing up in the city.",
-    "link": "https://www.coventry.gov.uk/news/article/5584/thousands-of-coventry-children-and-young-people-share-their-views-through-one-big-voice-survey",
-    "date": "3 November 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "10 November 2026 at 17:11"
+    "fetchedAt": "11 November 2026 at 16:00"
   }
 ]
