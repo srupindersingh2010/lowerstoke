@@ -1,16 +1,5 @@
 [
   {
-    "date": "13 November 2026",
-    "dayOfWeek": "Friday",
-    "time": "11.00 am",
-    "title": "WMCA Board",
-    "location": "WMCA, 16 Summer Lane, Birmingham",
-    "agendaUrl": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=137&MId=2150",
-    "withinWeek": true,
-    "sourceUrl": "https://governance.wmca.org.uk/mgCalendarMonthView.aspx?M=11&DD=2026&CID=0&OT=&C=-1&MR=0&GL=1",
-    "fetchedAt": "13 November 2026 at 16:57"
-  },
-  {
     "date": "16 November 2026",
     "dayOfWeek": "Monday",
     "time": "10.00 am",
@@ -19,7 +8,7 @@
     "agendaUrl": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=135&MId=2141",
     "withinWeek": true,
     "sourceUrl": "https://governance.wmca.org.uk/mgCalendarMonthView.aspx?M=11&DD=2026&CID=0&OT=&C=-1&MR=0&GL=1",
-    "fetchedAt": "13 November 2026 at 16:57"
+    "fetchedAt": "14 November 2026 at 15:01"
   },
   {
     "date": "17 November 2026",
@@ -30,7 +19,7 @@
     "agendaUrl": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=136&MId=2270",
     "withinWeek": true,
     "sourceUrl": "https://governance.wmca.org.uk/mgCalendarMonthView.aspx?M=11&DD=2026&CID=0&OT=&C=-1&MR=0&GL=1",
-    "fetchedAt": "13 November 2026 at 16:57"
+    "fetchedAt": "14 November 2026 at 15:01"
   },
   {
     "date": "30 November 2026",
@@ -41,6 +30,17 @@
     "agendaUrl": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=356&MId=2286",
     "withinWeek": false,
     "sourceUrl": "https://governance.wmca.org.uk/mgCalendarMonthView.aspx?M=11&DD=2026&CID=0&OT=&C=-1&MR=0&GL=1",
-    "fetchedAt": "13 November 2026 at 16:57"
+    "fetchedAt": "14 November 2026 at 15:01"
+  },
+  {
+    "date": "14 December 2026",
+    "dayOfWeek": "Monday",
+    "time": "10.00 am",
+    "title": "Investment Board",
+    "location": "WMCA, 16 Summer Lane, Birmingham",
+    "agendaUrl": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=135&MId=2142",
+    "withinWeek": false,
+    "sourceUrl": "https://governance.wmca.org.uk/mgCalendarMonthView.aspx?M=12&DD=2026&CID=0&OT=&C=-1&MR=0&GL=1",
+    "fetchedAt": "14 November 2026 at 15:01"
   }
 ]
