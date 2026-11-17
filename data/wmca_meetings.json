@@ -1,16 +1,5 @@
 [
   {
-    "date": "16 November 2026",
-    "dayOfWeek": "Monday",
-    "time": "10.00 am",
-    "title": "Investment Board",
-    "location": "WMCA, 16 Summer Lane, Birmingham",
-    "agendaUrl": "https://governance.wmca.org.uk/ieListDocuments.aspx?CId=135&MId=2141",
-    "withinWeek": true,
-    "sourceUrl": "https://governance.wmca.org.uk/mgCalendarMonthView.aspx?M=11&DD=2026&CID=0&OT=&C=-1&MR=0&GL=1",
-    "fetchedAt": "16 November 2026 at 19:01"
-  },
-  {
     "date": "17 November 2026",
     "dayOfWeek": "Tuesday",
     "time": "10.00 am",
