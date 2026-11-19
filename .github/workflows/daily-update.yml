@@ -25,6 +25,8 @@ jobs:
         run: pip install requests beautifulsoup4 playwright==1.44.0
 
       - name: Run scraper
+        env:
+          SKIP_COUNCIL: "1"   # council meetings come from the self-hosted runner (council-meetings.yml)
         run: python scrape.py
 
       - name: Commit and push updated data
@@ -36,5 +38,6 @@ jobs:
           git add data/
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "Auto-update ward data $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push origin HEAD:main --force-with-lease
+          git pull --rebase origin main
+          git push origin HEAD:main
 

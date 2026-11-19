@@ -1,0 +1,47 @@
+name: Council meetings (home runner)
+
+# Coventry's edemocracy site blocks GitHub's own servers, so this job runs on
+# a self-hosted runner at home (label: council). If the computer is off,
+# the run just waits in the queue until it is back on.
+
+on:
+  schedule:
+    - cron: '15 7 * * *'
+    - cron: '15 17 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: council-meetings
+  cancel-in-progress: false
+
+jobs:
+  council:
+    runs-on: [self-hosted, council]
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python environment
+        run: |
+          python3 -m venv "$RUNNER_TEMP/venv"
+          "$RUNNER_TEMP/venv/bin/pip" install -q requests beautifulsoup4
+
+      - name: Fetch council meetings
+        run: '"$RUNNER_TEMP/venv/bin/python" scrape.py --only council'
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/council_meetings.json
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Update council meetings $(date -u '+%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1

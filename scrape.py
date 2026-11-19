@@ -1360,9 +1360,19 @@ def scrape_wmca_meetings():
 
 if __name__ == "__main__":
     print(f"=== Lower Stoke Ward Scraper - {STAMP} ===\n")
-    for fn in [scrape_news, scrape_planning, scrape_council_meetings, scrape_wmca_meetings, scrape_police_events,
-               scrape_police_team, scrape_police_crimes, scrape_police_news, scrape_casework,
-               write_metadata]:
+    # Coventry's council site blocks GitHub's servers, so council meetings are
+    # fetched by a self-hosted runner on a home computer instead:
+    #   python scrape.py --only council   -> just the council meetings
+    #   SKIP_COUNCIL=1 python scrape.py   -> everything except council meetings
+    if "--only" in sys.argv and "council" in sys.argv:
+        jobs = [scrape_council_meetings]
+    else:
+        jobs = [scrape_news, scrape_planning, scrape_council_meetings, scrape_wmca_meetings, scrape_police_events,
+                scrape_police_team, scrape_police_crimes, scrape_police_news, scrape_casework,
+                write_metadata]
+        if os.environ.get("SKIP_COUNCIL"):
+            jobs.remove(scrape_council_meetings)
+    for fn in jobs:
         try:
             fn()
         except Exception as e:
