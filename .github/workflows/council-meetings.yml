@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   council:
-    runs-on: [self-hosted, council]
+    runs-on: self-hosted
     permissions:
       contents: write
     steps:
