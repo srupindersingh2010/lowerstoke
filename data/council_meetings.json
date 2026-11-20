@@ -1,49 +1,5 @@
 [
   {
-    "date": "19 November 2026",
-    "dayOfWeek": "Thursday",
-    "time": "1.00 pm - 2.00 pm",
-    "title": "Cabinet Member for Policy and Leadership",
-    "location": "Diamond Room 1 - Council House",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=562&MId=13856",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13856",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
-  },
-  {
-    "date": "19 November 2026",
-    "dayOfWeek": "Thursday",
-    "time": "10.00 am - 12.00 pm",
-    "title": "Education and Children's Services Scrutiny Board (2)",
-    "location": "Diamond Rooms 1 and 2 - Council House",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=569&MId=13800",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13800",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
-  },
-  {
-    "date": "19 November 2026",
-    "dayOfWeek": "Thursday",
-    "time": "2.00 pm - 4.00 pm",
-    "title": "Cabinet Member for Community Safety and Cohesion",
-    "location": "Committee Room 3 - Council House",
-    "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=791&MId=13877",
-    "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13877",
-    "withinWeek": true,
-    "attendanceChecked": true,
-    "ourCouncillors": [
-      "John Douglas McNicholas"
-    ],
-    "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
-  },
-  {
     "date": "20 November 2026",
     "dayOfWeek": "Friday",
     "time": "9.30 am - 11.30 am",
@@ -55,7 +11,7 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "23 November 2026",
@@ -71,7 +27,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "24 November 2026",
@@ -88,7 +44,7 @@
       "Rupinder Singh"
     ],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "25 November 2026",
@@ -102,21 +58,21 @@
     "attendanceChecked": true,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "30 November 2026",
     "dayOfWeek": "Monday",
     "time": "9.00 am - 5.00 pm",
     "title": "Appointments Panel",
-    "location": "Lord Mayor's Hospitality Suite - Council House",
+    "location": "Committee Room 3 - Council House",
     "agendaUrl": "https://edemocracy.coventry.gov.uk/ieListDocuments.aspx?CId=120&MId=13878",
     "attendanceUrl": "https://edemocracy.coventry.gov.uk/mgMeetingAttendance.aspx?ID=13878",
     "withinWeek": false,
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "1 December 2026",
@@ -130,7 +86,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "3 December 2026",
@@ -144,7 +100,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "4 December 2026",
@@ -158,7 +114,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "8 December 2026",
@@ -172,7 +128,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "9 December 2026",
@@ -186,7 +142,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "9 December 2026",
@@ -200,7 +156,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "10 December 2026",
@@ -214,7 +170,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "10 December 2026",
@@ -228,7 +184,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "11 December 2026",
@@ -242,7 +198,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "14 December 2026",
@@ -256,7 +212,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "15 December 2026",
@@ -270,7 +226,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "15 December 2026",
@@ -284,7 +240,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "17 December 2026",
@@ -298,7 +254,7 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   },
   {
     "date": "17 December 2026",
@@ -312,6 +268,6 @@
     "attendanceChecked": false,
     "ourCouncillors": [],
     "sourceUrl": "https://edemocracy.coventry.gov.uk/mgCalendarAgendaView.aspx?RPID=0&M=11&DD=2026&CID=0&OT=&C=-1&MR=1",
-    "fetchedAt": "20 November 2026 at 00:36"
+    "fetchedAt": "20 November 2026 at 17:05"
   }
 ]
