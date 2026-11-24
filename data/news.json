@@ -1,13 +1,23 @@
 [
   {
+    "title": "Carers Trust recognise Council's digital inclusion work",
+    "summary": "The Council's digital inclusion programme, #CovConnects, has won an award from Carers Trust (Heart of England - Coventry & Warwickshire) for its commitment to helping local unpaid carers get online.",
+    "link": "https://www.coventry.gov.uk/news/article/5597/carers-trust-recognise-council-s-digital-inclusion-work",
+    "date": "24 November 2026",
+    "focused": true,
+    "source": "coventry.gov.uk/news",
+    "sourceUrl": "https://www.coventry.gov.uk/news",
+    "fetchedAt": "24 November 2026 at 19:46"
+  },
+  {
     "title": "16 Days of Activism Against Gender Based Violence",
     "summary": "Coventry organisations are joining forces to raise awareness of gender-based violence.",
     "link": "https://www.coventry.gov.uk/news/article/5596/16-days-of-activism-against-gender-based-violence",
     "date": "23 November 2026",
-    "focused": true,
+    "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 November 2026 at 20:55"
+    "fetchedAt": "24 November 2026 at 19:46"
   },
   {
     "title": "Festival of Christmas returns to the city centre for spectacular festive celebration",
@@ -17,7 +27,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 November 2026 at 20:55"
+    "fetchedAt": "24 November 2026 at 19:46"
   },
   {
     "title": "Council report forecasts finance underspend",
@@ -27,7 +37,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 November 2026 at 20:55"
+    "fetchedAt": "24 November 2026 at 19:46"
   },
   {
     "title": "Coventry students take work experience campaign to Westminster",
@@ -37,7 +47,7 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 November 2026 at 20:55"
+    "fetchedAt": "24 November 2026 at 19:46"
   },
   {
     "title": "Funding boost for Coventry’s Cultural and Creative Sector",
@@ -47,16 +57,6 @@
     "focused": false,
     "source": "coventry.gov.uk/news",
     "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 November 2026 at 20:55"
-  },
-  {
-    "title": "New roving camera to help tackle fly-tipping",
-    "summary": "The Council has introduced a new roving CCTV camera to help further tackle fly-tipping across the city.",
-    "link": "https://www.coventry.gov.uk/news/article/5591/new-roving-camera-to-help-tackle-fly-tipping",
-    "date": "11 November 2026",
-    "focused": false,
-    "source": "coventry.gov.uk/news",
-    "sourceUrl": "https://www.coventry.gov.uk/news",
-    "fetchedAt": "23 November 2026 at 20:55"
+    "fetchedAt": "24 November 2026 at 19:46"
   }
 ]
